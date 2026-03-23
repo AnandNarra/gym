@@ -18,7 +18,7 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <div className="relative h-screen bg-gray-900 overflow-hidden">
+    <div className="relative h-screen bg-white overflow-hidden">
       {images.map((img, index) => (
         <div
           key={index}
