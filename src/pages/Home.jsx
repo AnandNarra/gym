@@ -27,10 +27,10 @@ const Home = () => {
       <Hero />
       
       {/* About Section */}
-      <section className="py-20 bg-gray-900 border-b border-gray-800">
+      <section className="py-20 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold uppercase mb-6"><span className="text-yellow-500">About</span> Our Gym</h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-gray-500 text-lg max-w-3xl mx-auto font-light leading-relaxed">
             Welcome to GymFitness, the premier location for fitness enthusiasts. We provide an encouraging community, professional coaches, 
             and tailored programs to help you transform your lifestyle. Experience the best workout environment with world-class facilities.
           </p>
@@ -38,7 +38,7 @@ const Home = () => {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-gray-950">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {services.map((service, index) => (
@@ -49,11 +49,11 @@ const Home = () => {
       </section>
 
       {/* Nutrition Plans */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4"><span className="text-yellow-500">Nutrition</span> Plans</h2>
-            <p className="text-gray-400 font-light">Choose the best tailored nutrition program that fits your goals.</p>
+            <p className="text-gray-500 font-light">Choose the best tailored nutrition program that fits your goals.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {plans.map((plan, index) => (
@@ -68,33 +68,33 @@ const Home = () => {
       </section>
 
       {/* CTA Sections (Online and Home Training) */}
-      <section className="grid grid-cols-1 md:grid-cols-2">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div 
-          className="relative py-24 px-10 text-center md:border-r border-gray-700 bg-cover bg-center overflow-hidden"
+          className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl"
           style={{ backgroundImage: "url('/images/online-training.png')" }}
         >
-          <div className="absolute inset-0 bg-gray-900/80 z-0 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold uppercase mb-4 text-white">Online Training</h2>
-            <p className="text-gray-300 mb-8 font-light text-lg">Get fit from anywhere in the world with our personal online training programs.</p>
+            <p className="text-gray-200 mb-8 font-light text-lg">Get fit from anywhere in the world with our personal online training programs.</p>
             <Link to="/online-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block">Learn More</Link>
           </div>
         </div>
         <div 
-          className="relative py-24 px-10 text-center bg-cover bg-center overflow-hidden"
+          className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl"
           style={{ backgroundImage: "url('/images/home-training.png')" }}
         >
-          <div className="absolute inset-0 bg-gray-950/80 z-0 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none"></div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold uppercase mb-4 text-white">Home Training</h2>
-            <p className="text-gray-300 mb-8 font-light text-lg">Don't have time for the gym? We'll bring the training right to your doorstep.</p>
+            <p className="text-gray-200 mb-8 font-light text-lg">Don't have time for the gym? We'll bring the training right to your doorstep.</p>
             <Link to="/home-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block">Learn More</Link>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-gray-950">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4"><span className="text-yellow-500">Member</span> Stories</h2>
@@ -125,9 +125,9 @@ const Home = () => {
       {/* Contact Banner */}
       <section className="bg-yellow-500 py-16 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold uppercase text-gray-900 mb-6">Ready to Start?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold uppercase text-white mb-6">Ready to Start?</h2>
           <p className="text-xl text-gray-800 mb-8">Contact us today to get your personalized fitness consultation.</p>
-          <Link to="/contact" className="bg-gray-900 text-yellow-500 font-bold uppercase py-4 px-10 rounded-full hover:bg-gray-800 transition shadow-xl inline-block text-lg">Contact Us</Link>
+          <Link to="/contact" className="bg-white text-yellow-500 font-bold uppercase py-4 px-10 rounded-full hover:bg-gray-50 transition shadow-xl inline-block text-lg">Contact Us</Link>
         </div>
       </section>
 
