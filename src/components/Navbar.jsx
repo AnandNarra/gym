@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-gray-900 shadow-lg border-b border-gray-800">
+    <nav className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -29,7 +29,7 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={`text-sm font-medium transition-colors hover:text-yellow-500 ${
-                  location.pathname === link.path ? 'text-yellow-500' : 'text-gray-300'
+                  location.pathname === link.path ? 'text-yellow-500' : 'text-gray-600'
                 }`}
               >
                 {link.name}
@@ -45,7 +45,7 @@ const Navbar = () => {
           <div className="flex md:hidden items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
+              className="text-gray-600 hover:text-gray-900 focus:outline-none"
             >
               {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
             </button>
@@ -54,7 +54,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-gray-900 border-t border-gray-800">
+        <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {links.map((link) => (
               <Link
@@ -63,8 +63,8 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   location.pathname === link.path
-                    ? 'text-yellow-500 bg-gray-800'
-                    : 'text-gray-300 hover:text-white hover:bg-gray-700'
+                    ? 'text-yellow-500 bg-gray-50'
+                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
                 }`}
               >
                 {link.name}

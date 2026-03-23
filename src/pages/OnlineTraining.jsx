@@ -12,20 +12,20 @@ const OnlineTraining = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-900 pt-20 pb-24">
+    <div className="min-h-screen bg-white pt-20 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white text-center uppercase mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
           <span className="text-yellow-500">Online</span> Training
         </h1>
-        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16 text-lg font-light">
+        <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16 text-lg font-light">
           Get access to elite trainers no matter where you live. Our online coaching brings the gym directly to your phone.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programs.map((program, index) => (
-            <div key={index} className="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-xl hover:-translate-y-2 hover:border-yellow-500/50 transition-all duration-300 flex flex-col">
-              <h3 className="text-2xl font-bold text-white mb-4 uppercase">{program.title}</h3>
-              <p className="text-gray-400 font-light mb-8 flex-grow">{program.desc}</p>
+            <div key={index} className="bg-gray-50 p-8 rounded-2xl border border-gray-300 shadow-xl hover:-translate-y-2 hover:border-yellow-500/50 transition-all duration-300 flex flex-col">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 uppercase">{program.title}</h3>
+              <p className="text-gray-500 font-light mb-8 flex-grow">{program.desc}</p>
               <div className="mb-6">
                 <span className="text-3xl font-extrabold text-yellow-500">{program.price.split(' ')[0]}</span>
                 <span className="text-gray-500 text-sm"> {program.price.split(' ').slice(1).join(' ')}</span>
