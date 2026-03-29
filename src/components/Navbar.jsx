@@ -19,8 +19,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <img src="/images/logo.png" alt="GymFitness Logo" className="h-[40px] w-auto max-w-[200px] object-contain" />
+            <Link to="/" className="flex flex-col justify-center items-start">
+              <div className="text-3xl font-extrabold tracking-tight">
+                <span style={{ color: '#2b4a7d' }}>vefit</span><span style={{ color: '#6ec344' }}>.in</span>
+              </div>
+              <span className="text-[10px] text-gray-500 font-medium mt-[-2px]">Gyms. Fit meals. Gym supplements.</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-6">

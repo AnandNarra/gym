@@ -7,8 +7,11 @@ const Footer = () => {
     <footer className="bg-gray-50 text-gray-600 py-10 mt-16 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <Link to="/" className="inline-block mb-4">
-            <img src="/images/logo.png" alt="GymFitness Logo" className="h-[40px] w-auto max-w-[200px] object-contain" />
+          <Link to="/" className="inline-flex flex-col justify-center items-start mb-4">
+            <div className="text-3xl font-extrabold tracking-tight">
+              <span style={{ color: '#2b4a7d' }}>vefit</span><span style={{ color: '#6ec344' }}>.in</span>
+            </div>
+            <span className="text-[10px] text-gray-500 font-medium mt-[-2px]">Gyms. Fit meals. Gym supplements.</span>
           </Link>
           <p className="text-sm">Transform your body and life with expert guidance, premium plans, and pure motivation. Join us today.</p>
         </div>
@@ -44,7 +47,7 @@ const Footer = () => {
       </div>
       
       <div className="mt-8 pt-8 border-t border-gray-200 text-center text-xs text-gray-500">
-        <p>&copy; {new Date().getFullYear()} GymFitness. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} vefit.in. All rights reserved.</p>
       </div>
     </footer>
   );
