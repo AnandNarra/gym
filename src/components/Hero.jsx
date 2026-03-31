@@ -1,36 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ThreeBackground from './ThreeBackground';
 
 const Hero = () => {
-  const images = [
-    '/images/hero-bg.png',
-    '/images/about-gym.png',
-    '/images/testimonial-bg.png'
-  ];
-
-  const [currentImage, setCurrentImage] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <div className="relative h-screen bg-black overflow-hidden relative">
-      <ThreeBackground />
-      {images.map((img, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${index === currentImage ? 'opacity-30 z-0' : 'opacity-0 -z-10'
-            }`}
-          style={{ backgroundImage: `url('${img}')`, filter: 'grayscale(50%)' }}
-        ></div>
-      ))}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none z-0"></div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-70 z-0"
+        style={{ filter: 'grayscale(20%)' }}
+      >
+        <source src="/videos/bg-video.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none z-0"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto">
         <motion.h1
