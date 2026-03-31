@@ -186,20 +186,6 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* Contact Banner */}
-      <section className="bg-yellow-500 py-16 text-center overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto px-4"
-        >
-          <h2 className="text-3xl md:text-5xl font-bold uppercase text-white mb-6">Ready to Start?</h2>
-          <p className="text-xl text-gray-800 mb-8">Contact us today to get your personalized fitness consultation.</p>
-          <Link to="/contact" className="bg-white text-yellow-500 font-bold uppercase py-4 px-10 rounded-full hover:bg-gray-50 transition shadow-xl inline-block text-lg hover:scale-105">Contact Us</Link>
-        </motion.div>
-      </section>
 
     </>
   );
