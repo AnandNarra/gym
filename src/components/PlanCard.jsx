@@ -10,7 +10,7 @@ const PlanCard = ({ title, img, desc, benefits, onApply }) => {
           className="w-full h-full object-cover transition duration-500 hover:scale-110" 
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-        <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-gray-900 uppercase tracking-wide">{title}</h3>
+        <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white uppercase tracking-wide">{title}</h3>
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <p className="text-gray-600 mb-6 font-light">{desc}</p>
