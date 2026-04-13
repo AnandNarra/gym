@@ -34,8 +34,8 @@ const Contact = () => {
         description="Get in touch with VeFit.in to start your fitness journey. We're here to help with training, nutrition, and gym business setup." 
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
-          <span className="text-yellow-500">Contact</span> Us
+        <h1 className="text-5xl md:text-7xl text-gray-900 text-center mb-6 tracking-tight leading-tight">
+          <span className="text-yellow-500 italic">Contact</span> Us
         </h1>
         <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16 text-lg font-light leading-relaxed">
           Questions or inquiries? Don't hesitate to reach out. Drop us a line or visit the gym to transform your life today.

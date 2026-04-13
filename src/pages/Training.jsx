@@ -12,8 +12,8 @@ const Training = () => {
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 uppercase mb-4 tracking-tight">
-            Our <span className="text-yellow-500">Training</span> Programs
+          <h1 className="text-5xl md:text-7xl text-gray-900 mb-4 tracking-tight">
+            Our <span className="text-yellow-500 italic">Training</span> Programs
           </h1>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light">
             Whether you prefer the comfort of your home or the flexibility of online coaching, we have the perfect training solution for you.
@@ -31,7 +31,7 @@ const Training = () => {
           >
             <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold uppercase mb-4 text-white">Home Training</h2>
+              <h2 className="text-3xl mb-4 text-white">Home <span className="italic">Training</span></h2>
               <p className="text-gray-200 mb-8 font-light text-sm">Don't have time for the gym? We'll bring the training right to your doorstep.</p>
               <Link to="/home-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">Learn More</Link>
             </div>
@@ -47,7 +47,7 @@ const Training = () => {
           >
             <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold uppercase mb-4 text-white">Online Training</h2>
+              <h2 className="text-3xl mb-4 text-white">Online <span className="italic">Training</span></h2>
               <p className="text-gray-200 mb-8 font-light text-sm">Get fit from anywhere in the world with our personal online training programs.</p>
               <Link to="/online-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">Learn More</Link>
             </div>
@@ -63,7 +63,7 @@ const Training = () => {
           >
             <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold uppercase mb-4 text-white">Nutrition Plans</h2>
+              <h2 className="text-3xl mb-4 text-white">Nutrition <span className="italic">Plans</span></h2>
               <p className="text-gray-200 mb-8 font-light text-sm">Tailored diets for fat loss, muscle gain & health optimized for your body.</p>
               <Link to="/nutrition" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">Learn More</Link>
             </div>

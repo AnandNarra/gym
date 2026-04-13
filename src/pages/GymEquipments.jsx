@@ -21,31 +21,44 @@ const GymEquipments = () => {
         description="Supply your gym with world-class equipment from Aerofit, Maxfit, Jerai, and Realleader USA. Premium fitness hardware for elite performance." 
       />
       {/* Hero Section */}
-      <section className="relative py-32 bg-gray-900 text-white overflow-hidden">
+      <section className="relative py-32 bg-gray-900 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/gym-equipment-bg.png')" }}></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h1
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-extrabold uppercase mb-6 tracking-tight"
+            className="flex flex-col items-center"
           >
-            Gym <span className="text-yellow-500">Equipment</span>
-          </motion.h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed mb-10">
-            From providing high-quality equipment to offering complete franchise support—we handle everything you need to succeed.
-          </p>
-          <button
-            onClick={() => setShowForm(true)}
-            className="bg-yellow-500 text-gray-900 uppercase font-bold py-4 px-12 rounded-full hover:bg-yellow-400 transition-all shadow-xl hover:scale-105"
-          >
-            Request Catalog
-          </button>
+            <span className="text-yellow-500 uppercase tracking-[0.3em] text-sm font-semibold mb-4 drop-shadow-sm">
+              Premium Hardware
+            </span>
+            <h1 
+              className="text-5xl md:text-7xl mb-6 tracking-tight leading-tight"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              Gym <span className="italic text-yellow-500">Equipment</span>
+            </h1>
+            <div className="w-20 h-1 bg-yellow-500 mb-8 rounded-full"></div>
+            <p className="text-xl md:text-2xl text-gray-200 max-w-5xl mx-auto font-light leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
+              <span className="bg-black/50 px-4 py-2 rounded-lg shadow-xl" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
+                From providing high-quality equipment to offering complete franchise support—we handle everything you need to succeed.
+              </span>
+            </p>
+            <button
+              onClick={() => setShowForm(true)}
+              className="bg-yellow-500 text-gray-900 uppercase font-bold py-4 px-12 rounded-full hover:bg-yellow-400 transition-all shadow-xl hover:scale-105"
+            >
+              Request Catalog
+            </button>
+          </motion.div>
         </div>
       </section>
 
       {/* Brands Section */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4 text-gray-900">Partner <span className="text-yellow-500">Brands</span></h2>
+        <h2 className="text-3xl md:text-5xl mb-4 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
+          Partner <span className="text-yellow-500 italic">Brands</span>
+        </h2>
         <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light mb-16">
           We collaborate with multiple leading global brands to bring you the best-in-class fitness hardware.
         </p>

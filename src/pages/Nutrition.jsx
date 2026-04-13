@@ -27,8 +27,8 @@ const Nutrition = () => {
         description="Unlock your maximum potential with our personalized nutrition programs tailored specially to match your unique fitness goals." 
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
-          <span className="text-yellow-500">Nutrition</span> Plans
+        <h1 className="text-5xl md:text-7xl text-gray-900 text-center mb-6 tracking-tight leading-tight">
+          <span className="text-yellow-500 italic">Nutrition</span> Plans
         </h1>
         <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16 text-lg font-light">
           Unlock your maximum potential with our personalized nutrition programs tailored specially to match your unique fitness goals.

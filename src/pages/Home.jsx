@@ -44,7 +44,7 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Training & Nutrition</h2>
+            <h2 className="text-3xl mb-4 text-white tracking-wide">Training & <span className="italic">Nutrition</span></h2>
             <p className="text-gray-200 mb-8 font-light text-sm">Expert Home/Online training and scientific diet plans.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
           </div>
@@ -62,7 +62,7 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Franchise Offering</h2>
+            <h2 className="text-3xl mb-4 text-white tracking-wide">Franchise <span className="italic">Offering</span></h2>
             <p className="text-gray-200 mb-8 font-light text-sm">End-to-end solutions for setting up and scaling your gym business.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">Learn More</span>
           </div>
@@ -80,7 +80,7 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Gym Equipment</h2>
+            <h2 className="text-3xl mb-4 text-white tracking-wide">Gym <span className="italic text-yellow-500">Equipment</span></h2>
             <p className="text-gray-200 mb-8 font-light text-sm">High-quality multi-gym equipment from leading global brands.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Brands</span>
           </div>
@@ -100,7 +100,7 @@ const Home = () => {
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         >
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4"><span className="text-yellow-500">Member</span> Stories</h2>
+            <h2 className="text-4xl md:text-5xl mb-4"><span className="text-yellow-500 italic">Member</span> Stories</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
@@ -142,7 +142,7 @@ const Home = () => {
           transition={{ duration: 0.6 }}
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         >
-          <h2 className="text-3xl md:text-5xl font-bold uppercase mb-6"><span className="text-yellow-500">About</span> Our Gym</h2>
+          <h2 className="text-4xl md:text-5xl mb-6"><span className="text-yellow-500 italic">About</span> Our Gym</h2>
           <p className="text-gray-500 text-lg max-w-3xl mx-auto font-light leading-relaxed">
             Welcome to vefit.in, the premier location for fitness enthusiasts. We provide an encouraging community, professional coaches,
             and tailored programs to help you transform your lifestyle. Experience the best workout environment with world-class facilities.
