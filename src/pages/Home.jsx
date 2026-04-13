@@ -104,9 +104,13 @@ const Home = () => {
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
                 <img 
                   src="/images/founder.png" 
-                  alt="Founder of veFit.in" 
+                  alt="Mahesh Kagithala - Founder of veFit.in" 
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
                 />
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-white text-center z-20">
+                  <div className="text-xl font-bold uppercase tracking-widest leading-none mb-1 text-white">Mahesh Kagithala</div>
+                  <div className="text-yellow-500 text-[10px] uppercase font-bold tracking-[0.4em]">Founder</div>
+                </div>
               </div>
             </motion.div>
 

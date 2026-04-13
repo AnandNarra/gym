@@ -14,9 +14,9 @@ const OnlineTraining = () => {
 
   return (
     <div className="min-h-screen bg-white pt-20 pb-24">
-      <SEO 
-        title="Online Training" 
-        description="Elite 1-on-1 coaching customized to your body and goals, accessible from anywhere in the world." 
+      <SEO
+        title="Online Training"
+        description="Elite 1-on-1 coaching customized to your body and goals, accessible from anywhere in the world."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
@@ -31,11 +31,11 @@ const OnlineTraining = () => {
             <div key={index} className="bg-gray-50 p-8 rounded-2xl border border-gray-300 shadow-xl hover:-translate-y-2 hover:border-yellow-500/50 transition-all duration-300 flex flex-col">
               <h3 className="text-2xl font-bold text-gray-900 mb-4 uppercase">{program.title}</h3>
               <p className="text-gray-500 font-light mb-8 flex-grow">{program.desc}</p>
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <span className="text-3xl font-extrabold text-yellow-500">{program.price.split(' ')[0]}</span>
                 <span className="text-gray-500 text-sm"> {program.price.split(' ').slice(1).join(' ')}</span>
-              </div>
-              <button 
+              </div> */}
+              <button
                 onClick={() => setSelectedPlan(program.title)}
                 className="w-full bg-yellow-500 text-gray-900 uppercase font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors shadow-lg"
               >
@@ -47,9 +47,9 @@ const OnlineTraining = () => {
       </div>
 
       {selectedPlan && (
-        <NutritionForm 
-          selectedPlan={selectedPlan} 
-          onClose={() => setSelectedPlan(null)} 
+        <NutritionForm
+          selectedPlan={selectedPlan}
+          onClose={() => setSelectedPlan(null)}
         />
       )}
     </div>
