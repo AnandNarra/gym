@@ -13,10 +13,9 @@ export const sendToWhatsApp = (data) => {
   
   if (data.address) message += `Address: ${data.address}\n`;
   if (data.city) message += `City: ${data.city}\n`;
+  if (data.email) message += `Email: ${data.email}\n`;
   if (data.location) message += `Location: ${data.location}\n`;
-  if (data.preferredTime) message += `Preferred Time: ${data.preferredTime}\n`;
-  if (data.goal) message += `Goal: ${data.goal}\n`;
-
+  if (data.pincode) message += `Pincode: ${data.pincode}\n`;
   if (data.phone) message += `Phone: ${data.phone}\n`;
 
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
