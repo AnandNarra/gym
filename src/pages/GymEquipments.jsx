@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LeadsForm from '../forms/LeadsForm';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const GymEquipments = () => {
   const [showForm, setShowForm] = useState(false);
@@ -15,6 +16,10 @@ const GymEquipments = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Gym Equipment" 
+        description="Supply your gym with world-class equipment from Aerofit, Maxfit, Jerai, and Realleader USA. Premium fitness hardware for elite performance." 
+      />
       {/* Hero Section */}
       <section className="relative py-32 bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/gym-equipment-bg.png')" }}></div>

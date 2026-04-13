@@ -1,9 +1,14 @@
 import React from 'react';
 import HomeTrainingForm from '../forms/HomeTrainingForm';
+import SEO from '../components/SEO';
 
 const HomeTraining = () => {
   return (
     <div className="min-h-screen bg-white pt-20 pb-24">
+      <SEO 
+        title="Home Training" 
+        description="Transform your living room into your personal gym. Expert trainers come to you for convenient, professional coaching." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
           <span className="text-yellow-500">Home</span> Training

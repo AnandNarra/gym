@@ -5,6 +5,7 @@ import ServiceCard from '../components/ServiceCard';
 import Testimonial from '../components/Testimonial';
 import { FaDumbbell, FaUtensils, FaHeartbeat } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,6 +19,10 @@ const Home = () => {
 
   return (
     <>
+      <SEO 
+        title="Home" 
+        description="VeFit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions." 
+      />
       <Hero />
 
 

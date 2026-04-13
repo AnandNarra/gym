@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import PlanCard from '../components/PlanCard';
 import NutritionForm from '../forms/NutritionForm';
+import SEO from '../components/SEO';
 
 const Nutrition = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -21,6 +22,10 @@ const Nutrition = () => {
 
   return (
     <div className="min-h-screen bg-white pt-20 pb-20">
+      <SEO 
+        title="Nutrition Plans" 
+        description="Unlock your maximum potential with our personalized nutrition programs tailored specially to match your unique fitness goals." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
           <span className="text-yellow-500">Nutrition</span> Plans

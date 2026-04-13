@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 import { sendToWhatsApp } from '../utils/whatsapp';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +29,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-white pt-20 pb-24">
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with VeFit.in to start your fitness journey. We're here to help with training, nutrition, and gym business setup." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
           <span className="text-yellow-500">Contact</span> Us

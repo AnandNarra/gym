@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const Training = () => {
   return (
     <div className="min-h-screen bg-white pt-32 pb-20">
+      <SEO 
+        title="Training" 
+        description="Choose between personalized Home Training and comprehensive Online Coaching programs designed to fit your lifestyle." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 uppercase mb-4 tracking-tight">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NutritionForm from '../forms/NutritionForm';
+import SEO from '../components/SEO';
 
 const OnlineTraining = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);
@@ -13,6 +14,10 @@ const OnlineTraining = () => {
 
   return (
     <div className="min-h-screen bg-white pt-20 pb-24">
+      <SEO 
+        title="Online Training" 
+        description="Elite 1-on-1 coaching customized to your body and goals, accessible from anywhere in the world." 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
           <span className="text-yellow-500">Online</span> Training

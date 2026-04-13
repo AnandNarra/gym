@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LeadsForm from '../forms/LeadsForm';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 
 const Franchise = () => {
   const [showForm, setShowForm] = useState(false);
@@ -18,6 +19,10 @@ const Franchise = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO 
+        title="Franchise Opportunity" 
+        description="Launch a profitable fitness business with VeFit.in. We offer location analysis, equipment supply, and complete marketing support." 
+      />
       {/* Hero Section */}
       <section className="relative py-32 bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/franchise-bg.png')" }}></div>
