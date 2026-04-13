@@ -8,9 +8,8 @@ const Navbar = () => {
 
   const links = [
     { name: 'Home', path: '/' },
+    { name: 'Training', path: '/training' },
     { name: 'Nutrition Plans', path: '/nutrition' },
-    { name: 'Online Training', path: '/online-training' },
-    { name: 'Home Training', path: '/home-training' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -19,11 +18,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col justify-center items-start">
+            <Link to="/" className="flex flex-col justify-center items-center">
               <div className="text-3xl font-extrabold tracking-tight">
                 <span style={{ color: '#2b4a7d' }}>vefit</span><span style={{ color: '#6ec344' }}>.in</span>
               </div>
-              <span className="text-[10px] text-gray-500 font-medium mt-[-2px]">Gyms. Fit meals. Gym supplements.</span>
+              <span className="text-[10px] text-gray-500 font-medium mt-[-2px]">Training. Gym equipment. Supplements.</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-6">
@@ -31,9 +30,8 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-yellow-500 ${
-                  location.pathname === link.path ? 'text-yellow-500' : 'text-gray-600'
-                }`}
+                className={`text-sm font-medium transition-colors hover:text-yellow-500 ${location.pathname === link.path ? 'text-yellow-500' : 'text-gray-600'
+                  }`}
               >
                 {link.name}
               </Link>
@@ -64,11 +62,10 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === link.path
-                    ? 'text-yellow-500 bg-gray-50'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${location.pathname === link.path
+                  ? 'text-yellow-500 bg-gray-50'
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+                  }`}
               >
                 {link.name}
               </Link>

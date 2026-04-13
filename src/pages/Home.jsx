@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
-import PlanCard from '../components/PlanCard';
 import Testimonial from '../components/Testimonial';
-import NutritionForm from '../forms/NutritionForm';
 import { FaDumbbell, FaUtensils, FaHeartbeat } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -17,11 +15,6 @@ const Home = () => {
     { icon: <FaHeartbeat />, title: 'Expert Trainers', description: 'Certified professional trainers to guide you in every step.' },
   ];
 
-  const plans = [
-    { title: 'Weight Loss', img: '/images/weight-loss.png', desc: 'Shed pounds fast and build an aesthetic physique.', benefits: ['Fat loss program', 'Dietary guidance', 'Weekly tracking'] },
-    { title: 'Weight Gain', img: '/images/weight-gain.png', desc: 'Build lean muscle mass and improve your overall strength.', benefits: ['Bulking nutrition', 'Hypertrophy guide', 'Form correction'] },
-    { title: 'Maintenance', img: '/images/maintenance.png', desc: 'Maintain your physique while improving cardiovascular health.', benefits: ['Balanced lifestyle', 'Flexible dieting', 'Endurance training'] },
-  ];
 
   return (
     <>
@@ -31,75 +24,48 @@ const Home = () => {
 
 
 
-      {/* CTA Sections (Online and Home Training) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-
+      {/* Main Categories Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+        
+        {/* Training Parent Card */}
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl group"
-          style={{ backgroundImage: "url('/images/home-training.png')" }}
-        >
-          <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white">Home Training</h2>
-            <p className="text-gray-200 mb-8 font-light text-lg">Don't have time for the gym? We'll bring the training right to your doorstep.</p>
-            <Link to="/home-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">Learn More</Link>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl group"
-          style={{ backgroundImage: "url('/images/online-training.png')" }}
-        >
-          <div className="absolute inset-0 bg-black/60 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white">Online Training</h2>
-            <p className="text-gray-200 mb-8 font-light text-lg">Get fit from anywhere in the world with our personal online training programs.</p>
-            <Link to="/online-training" className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">Learn More</Link>
-          </div>
-        </motion.div>
-
-      </section>
-
-
-      {/* Nutrition Plans */}
-      <section className="py-20 bg-white">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          className="relative py-32 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
+          style={{ backgroundImage: "url('/images/training-parent.png')" }}
+          onClick={() => navigate('/training')}
         >
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4"><span className="text-yellow-500">Nutrition</span> Plans</h2>
-            <p className="text-gray-500 font-light">Choose the best tailored nutrition program that fits your goals.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {plans.map((plan, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-              >
-                <PlanCard
-                  {...plan}
-                  onApply={(planTitle) => navigate('/nutrition', { state: { plan: planTitle } })}
-                />
-              </motion.div>
-            ))}
+          <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/50 transition duration-500"></div>
+          <div className="relative z-10">
+            <h2 className="text-4xl font-bold uppercase mb-4 text-white tracking-wider">Training</h2>
+            <p className="text-gray-200 mb-8 font-light text-lg">Personalized Home & Online workout programs.</p>
+            <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-10 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
           </div>
         </motion.div>
+
+        {/* Nutrition Parent Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative py-32 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
+          style={{ backgroundImage: "url('/images/nutrition-parent.png')" }}
+          onClick={() => navigate('/nutrition')}
+        >
+          <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/50 transition duration-500"></div>
+          <div className="relative z-10">
+            <h2 className="text-4xl font-bold uppercase mb-4 text-white tracking-wider">Nutrition Plans</h2>
+            <p className="text-gray-200 mb-8 font-light text-lg">Tailored diets for fat loss, muscle gain & health.</p>
+            <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-10 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
+          </div>
+        </motion.div>
+
       </section>
+
+
 
       {/* Testimonials */}
       <section className="py-24 bg-gray-50">

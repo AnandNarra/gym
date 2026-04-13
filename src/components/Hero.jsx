@@ -24,8 +24,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          Transform Your Body, <br className="hidden md:block" />
-          <span className="text-yellow-500">Transform Your Life</span>
+          Own Your Gym, <br className="hidden md:block" />
+          <span className="text-yellow-500">Own Your Future</span>
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl font-light"
@@ -33,7 +33,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          Push your limits, break your boundaries, and achieve your fitness goals with expert guidance and a supportive community.
+          We help you build, launch, and grow your dream fitness space.
+          Start your journey with us today.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
