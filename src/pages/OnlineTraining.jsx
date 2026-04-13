@@ -19,8 +19,8 @@ const OnlineTraining = () => {
         description="Elite 1-on-1 coaching customized to your body and goals, accessible from anywhere in the world." 
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl md:text-7xl text-gray-900 text-center mb-6 tracking-tight leading-tight">
-          <span className="text-yellow-500 italic">Online</span> Training
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
+          <span className="text-yellow-500">Online</span> Training
         </h1>
         <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16 text-lg font-light">
           Get access to elite trainers no matter where you live. Our online coaching brings the gym directly to your phone.

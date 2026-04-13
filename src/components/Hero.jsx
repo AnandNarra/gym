@@ -19,13 +19,13 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto">
         <motion.h1
-          className="text-5xl md:text-8xl text-white mb-6 tracking-tight leading-tight"
+          className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight leading-tight"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           Own Your Gym, <br className="hidden md:block" />
-          <span className="italic text-yellow-500">Own Your Future</span>
+          <span className="text-yellow-500">Own Your Future</span>
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl font-light"

@@ -26,7 +26,7 @@ const Franchise = () => {
       {/* Hero Section */}
       <section className="relative py-32 bg-gray-900 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/franchise-bg.png')" }}></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -36,16 +36,13 @@ const Franchise = () => {
               The VeFit Advantage
             </span>
             <h1
-              className="text-5xl md:text-7xl mb-6 tracking-tight leading-tight"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tight leading-tight"
             >
-              Franchise <span className="italic">Offering</span>
+              Franchise <span className="text-yellow-500">Offering</span>
             </h1>
             <div className="w-20 h-1 bg-yellow-500 mb-8 rounded-full"></div>
-            <p className="text-xl md:text-2xl text-gray-200 max-w-7xl mx-auto font-light leading-relaxed mb-12" style={{ fontFamily: "'Inter', sans-serif" }}>
-              <span className="bg-black/50 px-4 py-2 rounded-lg shadow-xl" style={{ boxDecorationBreak: 'clone', WebkitBoxDecorationBreak: 'clone' }}>
-                VeFit.in is a one-stop solution for aspiring gym owners and fitness entrepreneurs. We provide end-to-end solutions for setting up and scaling successful multi-gym businesses.
-              </span>
+            <p className="text-xl md:text-2xl text-gray-200 w-full mx-auto font-light leading-relaxed mb-12">
+              VeFit.in is a one-stop solution for aspiring gym owners and fitness entrepreneurs. We provide end-to-end solutions for setting up and scaling successful multi-gym businesses.
             </p>
             <button
               onClick={() => setShowForm(true)}
@@ -60,8 +57,8 @@ const Franchise = () => {
       {/* Details Section */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl mb-4 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Complete <span className="text-yellow-500 italic">Business</span> Solution
+          <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4 text-gray-900">
+            Complete <span className="text-yellow-500">Business</span> Solution
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light">
             We handle everything from location analysis to marketing support, ensuring your fitness venture is profitable and scalable.
@@ -88,7 +85,7 @@ const Franchise = () => {
               {/* Content */}
               <div className="relative z-10 p-6 h-full flex flex-col justify-end">
                 <div className="text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{item.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide" style={{ fontFamily: "'Playfair Display', serif" }}>{item.title}</h3>
+                <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">{item.title}</h3>
                 <p className="text-gray-300 text-xs font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">{item.desc}</p>
               </div>
             </motion.div>
@@ -101,8 +98,8 @@ const Franchise = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-12 rounded-3xl shadow-xl border border-gray-100">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-5xl mb-8 text-gray-900" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Why Choose <span className="text-yellow-500 italic">VeFit.in</span>
+              <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8 text-gray-900">
+                Why Choose <span className="text-yellow-500">VeFit.in</span>
               </h2>
               <ul className="space-y-6">
                 <li className="flex items-center text-lg text-gray-600">
