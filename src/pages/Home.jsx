@@ -88,7 +88,85 @@ const Home = () => {
 
       </section>
 
+      {/* Founder Story Section */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            {/* Image Column */}
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:w-1/2 relative"
+            >
+              <div className="absolute -inset-4 bg-yellow-500/10 rounded-3xl -rotate-3 z-0"></div>
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img 
+                  src="/images/founder.png" 
+                  alt="Founder of veFit.in" 
+                  className="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
+                />
+              </div>
+            </motion.div>
 
+            {/* Content Column */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="lg:w-1/2 space-y-8"
+            >
+              <div>
+                <span className="text-yellow-600 uppercase tracking-widest text-sm font-bold mb-2 block">Our Roots</span>
+                <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900 leading-tight">
+                  Founder Story – <span className="text-yellow-500">veFit.in</span>
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-gray-600 font-light text-lg leading-relaxed">
+                <p>
+                  In 2011, the journey began with a simple passion — <span className="font-bold text-gray-900 uppercase">fitness</span>.
+                </p>
+                <p>
+                  As a certified fitness trainer, I stepped into the industry with a strong desire to transform lives through health and discipline. Working across multiple gyms over the years, I didn’t just train clients — I studied the ecosystem deeply.
+                </p>
+                
+                <div className="bg-gray-50 p-8 rounded-2xl border-l-4 border-yellow-500 shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 uppercase">Building veFit.in</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-medium uppercase text-gray-700">
+                    <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> 3 Owned Gyms Established</div>
+                    <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> 7+ Managed Partner Gyms</div>
+                    <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> Lead Creative Teams</div>
+                    <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> Managed Operations</div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                  <div className="space-y-3">
+                    <h4 className="text-yellow-600 font-bold uppercase text-sm tracking-widest">Our Vision</h4>
+                    <p className="text-sm leading-6">To build a network of high-quality fitness centers that deliver consistent results and redefine gym operations in India.</p>
+                  </div>
+                  <div className="space-y-3">
+                    <h4 className="text-yellow-600 font-bold uppercase text-sm tracking-widest">Our Mission</h4>
+                    <p className="text-sm leading-6">To transform fitness businesses into structured, scalable, and profitable ventures while helping people achieve their best selves.</p>
+                  </div>
+                </div>
+
+                <div className="pt-8">
+                  <Link 
+                    to="/success-story" 
+                    className="inline-block bg-yellow-500 text-gray-900 uppercase font-bold py-4 px-10 rounded-full hover:bg-yellow-400 transition-all shadow-lg hover:scale-105"
+                  >
+                    Read Full Story
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
       <section className="py-24 bg-gray-50">

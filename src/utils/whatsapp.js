@@ -1,5 +1,5 @@
 export const sendToWhatsApp = (data) => {
-  const phone = "919959761403"; // Provided by user
+  const phone = "919515567932"; // Provided by user
 
   let message = `New Gym Inquiry:\n`;
   message += `Name: ${data.name || 'N/A'}\n`;

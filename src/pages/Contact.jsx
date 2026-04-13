@@ -17,14 +17,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phone = "919959761403";
+    const phone = "919515567932";
     const text = `New Contact Form Inquiry:\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
 
   const openWhatsApp = () => {
-    window.open(`https://wa.me/919959761403?text=${encodeURIComponent("Hi GymFitness, I have an inquiry.")}`, "_blank");
+    window.open(`https://wa.me/919515567932?text=${encodeURIComponent("Hi veFit.in, I have an inquiry.")}`, "_blank");
   };
 
   return (
