@@ -30,8 +30,8 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
           <ul className="space-y-2 text-sm">
             <li>Email: info@vefit.in</li>
-            <li>Phone: +91 9959761403</li>
-            <li>Location: Your City, State</li>
+            <li>Phone: +919515567932</li>
+            <li>Location: AMB Mall, Asian sun city, B 401, beside Sarath City Capital Mall, Kondapur, Hyderabad, Telangana 500084</li>
           </ul>
         </div>
 
