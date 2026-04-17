@@ -57,19 +57,13 @@ const PinkAngels = () => {
             <section className="relative py-20 md:py-32 bg-gradient-to-br from-pink-50 to-white overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-pink-100/30 rounded-l-[10rem] -z-10 blur-3xl"></div>
                 <div className="max-w-7xl mx-auto px-4 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        className="inline-block px-6 py-2 bg-pink-600/10 text-pink-600 rounded-full text-sm font-bold uppercase tracking-widest mb-8"
-                    >
-                        Empowering Women
-                    </motion.div>
+
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         className="text-6xl md:text-8xl font-black text-gray-900 uppercase tracking-tighter italic leading-none"
                     >
-                        Pink <span className="text-pink-600">Angels</span>
+                        <span className="text-pink-600">Pink Angel</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -272,7 +266,7 @@ const PinkAngels = () => {
             <section className="py-24 bg-white px-4">
                 <div className="max-w-5xl mx-auto rounded-[3.5rem] bg-gradient-to-br from-pink-600 to-rose-700 shadow-2xl relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                    
+
                     <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 p-10 md:p-16 lg:p-20">
                         {/* Mini Card Image on the Left */}
                         <motion.div
@@ -282,10 +276,10 @@ const PinkAngels = () => {
                             className="w-full lg:w-1/3"
                         >
                             <div className="bg-white/10 backdrop-blur-md p-3 rounded-[2rem] border border-white/20 shadow-xl">
-                                <img 
-                                    src={bannerImg} 
-                                    alt="Women's Training Banner" 
-                                    className="w-full h-auto rounded-[1.5rem]" 
+                                <img
+                                    src={bannerImg}
+                                    alt="Women's Training Banner"
+                                    className="w-full h-auto rounded-[1.5rem]"
                                 />
                             </div>
                         </motion.div>
