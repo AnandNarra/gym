@@ -9,7 +9,7 @@ const PlanApplicationForm = ({ title, onClose }) => {
     height: '',
     weight: '',
     work: '',
-    marriage: 'Single',
+    purpose: title || 'Diet + Workout Plan',
     phone: '',
     plan: title || 'Diet + Workout Plan'
   });
@@ -20,7 +20,12 @@ const PlanApplicationForm = ({ title, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendToWhatsApp(formData);
+    // Consolidate data for whatsapp
+    const submissionData = {
+        ...formData,
+        plan: `Pink Angel - ${formData.purpose}`
+    };
+    sendToWhatsApp(submissionData);
     if (onClose) onClose();
   };
 
@@ -37,7 +42,7 @@ const PlanApplicationForm = ({ title, onClose }) => {
         </button>
         
         <h2 className="text-3xl font-black text-[#1a1a1a] mb-1 uppercase text-center tracking-tighter">PLAN APPLICATION</h2>
-        <p className="text-[#d97706] text-center mb-6 font-bold uppercase tracking-widest text-xs">{formData.plan}</p>
+        <p className="text-[#d97706] text-center mb-6 font-bold uppercase tracking-widest text-xs">{formData.purpose}</p>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 gap-4">
@@ -106,14 +111,12 @@ const PlanApplicationForm = ({ title, onClose }) => {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-bold text-gray-700 mb-1">Marriage Status</label>
-                <select 
-                   name="marriage" value={formData.marriage} onChange={handleChange}
-                   className="w-full bg-[#e5e5e5] border border-gray-300 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#d97706] transition-all text-sm"
-                >
-                    <option value="Single">Single</option>
-                    <option value="Married">Married</option>
-                </select>
+                <label className="block text-xs font-bold text-gray-700 mb-1">Purpose</label>
+                <input 
+                    type="text" name="purpose" required value={formData.purpose} onChange={handleChange} 
+                    className="w-full bg-[#e5e5e5] border border-gray-300 rounded-xl px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#d97706] transition-all text-sm" 
+                    placeholder="e.g. Weight Management"
+                />
               </div>
             </div>
 

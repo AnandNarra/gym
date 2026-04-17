@@ -26,7 +26,7 @@ const Franchise = () => {
       />
 
 
-      <Hero />
+
       {/* Hero Section */}
       <section className="relative py-32 bg-gray-900 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/franchise-bg.png')" }}></div>

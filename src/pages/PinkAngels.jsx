@@ -29,7 +29,15 @@ const scaleImg = "/images/pink-angels/weight_mgmt_2.png";
 const pregNutriImg = "/images/pink-angels/pregnancy_nutrition.png";
 
 const PinkAngels = () => {
-    const [showForm, setShowForm] = useState(false);
+    const [selectedPlan, setSelectedPlan] = useState(null);
+
+    const openForm = (planTitle) => {
+        setSelectedPlan(planTitle);
+    };
+
+    const closeForm = () => {
+        setSelectedPlan(null);
+    };
 
     const fadeIn = {
         hidden: { opacity: 0, y: 40 },
@@ -196,16 +204,20 @@ const PinkAngels = () => {
                             <motion.div
                                 key={i}
                                 variants={fadeIn}
-                                className="bg-white rounded-3xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col h-full"
+                                className="bg-white rounded-3xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col h-full cursor-pointer"
+                                onClick={() => openForm(item.title)}
                             >
                                 <div className="h-64 overflow-hidden relative">
                                     <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                                     <div className="absolute top-4 left-4 w-10 h-10 bg-white/90 backdrop-blur shadow rounded-full flex items-center justify-center font-black text-pink-600">
                                         {i + 1}
                                     </div>
+                                    <div className="absolute inset-0 bg-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <span className="bg-white text-pink-600 font-bold px-6 py-2 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform">Enroll Now</span>
+                                    </div>
                                 </div>
                                 <div className="p-8 flex-grow">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors">{item.title}</h3>
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-pink-600 transition-colors uppercase tracking-tight">{item.title}</h3>
                                     <p className="text-gray-500 font-light leading-relaxed">{item.desc}</p>
                                 </div>
                             </motion.div>
@@ -353,12 +365,12 @@ const PinkAngels = () => {
                             <p className="text-pink-100 text-xl md:text-2xl font-light mb-10 max-w-xl">
                                 Empower your health journey today with Pink Angels. Expert guidance tailored for you.
                             </p>
-                            <button
-                                onClick={() => setShowForm(true)}
-                                className="inline-block bg-white text-pink-700 px-10 py-4 rounded-full font-black text-xl uppercase tracking-widest hover:scale-105 transition-transform shadow-xl"
-                            >
-                                Book Your Session
-                            </button>
+                            <button 
+                            onClick={() => openForm("Pink Angel Program")}
+                            className="bg-pink-600 text-white px-10 py-4 rounded-full font-black text-xl uppercase tracking-widest hover:bg-pink-700 transition-all shadow-xl hover:scale-105"
+                        >
+                            Book Your Session
+                        </button>
                         </motion.div>
                     </div>
                 </div>
@@ -366,10 +378,10 @@ const PinkAngels = () => {
 
             {/* Modal Form */}
             <AnimatePresence>
-                {showForm && (
-                    <PlanApplicationForm
-                        onClose={() => setShowForm(false)}
-                        title="Pink Angel Program"
+                {selectedPlan && (
+                    <PlanApplicationForm 
+                        onClose={closeForm} 
+                        title={selectedPlan}
                     />
                 )}
             </AnimatePresence>

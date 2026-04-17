@@ -24,6 +24,63 @@ const Home = () => {
         description="VeFit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions."
       />
 
+
+      {/* Pink Angels Video Showcase Section */}
+      <section className="relative h-[90vh] bg-black overflow-hidden group">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-60 z-0 transition-opacity duration-1000 group-hover:opacity-70"
+        >
+          <source src="/videos/pink-angels-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40 z-10"></div>
+
+        <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className=" font-bold tracking-[0.4em] uppercase text-lg md:text-xl mb-4"
+          >
+            <span className="text-white">Women's</span>
+          </motion.h2>
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="text-6xl md:text-9xl font-black text-white uppercase tracking-tighter italic leading-none mb-6"
+          >
+            <span className="text-pink-500"> PINK ANGEL</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-4 text-xl md:text-3xl text-gray-200 font-light max-w-4xl mx-auto font-serif italic"
+          >
+            "Transforming lives through personalized fitness, nutrition, and expert guidance tailored for the female body."
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="mt-12"
+          >
+            <button
+              onClick={() => navigate('/pink-angels')}
+              className="bg-pink-600 text-white px-12 py-4 rounded-full font-black text-xl uppercase tracking-widest hover:bg-pink-700 transition-all shadow-2xl hover:scale-105 active:scale-95"
+            >
+              Explore More
+            </button>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Main Categories Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
