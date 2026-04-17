@@ -13,28 +13,34 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-70 z-0"
         style={{ filter: 'grayscale(20%)' }}
       >
-        <source src="/videos/bg-video.mp4" type="video/mp4" />
+        <source src="/videos/home-hero.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent pointer-events-none z-0"></div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto">
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight leading-tight"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-6xl md:text-9xl font-black text-white mb-4 uppercase tracking-tighter leading-none italic"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Own Your Gym, <br className="hidden md:block" />
-          <span className="text-yellow-500">Own Your Future</span>
+          VEFIT<span className="text-yellow-500">.IN</span>
         </motion.h1>
         <motion.p
-          className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl font-light"
+          className="text-2xl md:text-4xl text-yellow-500 mb-4 font-black uppercase tracking-[0.2em] italic"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
-          We help you build, launch, and grow your dream fitness space.
-          Start your journey with us today.
+          Training. Gym equipment. Supplements.
+        </motion.p>
+        <motion.p
+          className="text-xl md:text-2xl text-gray-200 mb-10 font-light tracking-widest uppercase"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          Available Online and Offline
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

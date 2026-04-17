@@ -36,18 +36,20 @@ const Franchise = () => {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center"
           >
-            <span className="text-yellow-500 uppercase tracking-[0.3em] text-sm font-semibold mb-4 drop-shadow-sm">
+            <span className="text-yellow-500 uppercase tracking-[0.3em] text-sm font-semibold mb-6 drop-shadow-sm">
               The VeFit Advantage
             </span>
+            <p className="text-white text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase italic leading-none">
+              Own Your Gym. <br className="md:hidden" />
+              <span className="text-yellow-500">Own Your Future.</span>
+            </p>
             <h1
-              className="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tight leading-tight"
+              className="text-2xl md:text-3xl font-bold uppercase mb-8 tracking-widest text-gray-300"
             >
               Franchise <span className="text-yellow-500">Offering</span>
             </h1>
             <div className="w-20 h-1 bg-yellow-500 mb-8 rounded-full"></div>
-            <p className="text-xl md:text-2xl text-gray-200 w-full mx-auto font-light leading-relaxed mb-12">
-              VeFit.in is a one-stop solution for aspiring gym owners and fitness entrepreneurs. We provide end-to-end solutions for setting up and scaling successful multi-gym businesses.
-            </p>
+
             <button
               onClick={() => setShowForm(true)}
               className="bg-yellow-500 text-gray-900 uppercase font-bold py-4 px-12 rounded-full hover:bg-yellow-400 transition-all shadow-xl hover:scale-105"
