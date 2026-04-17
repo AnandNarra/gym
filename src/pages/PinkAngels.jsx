@@ -4,24 +4,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
 import PlanApplicationForm from '../forms/PlanApplicationForm';
 
-// Importing images from the root directory
-import bannerImg from '../../ff846035-aad8-4ba0-bac9-8d165cc1e016.png';
-import profileImg from '../../istockphoto-2149222509-612x612.jpg.jpeg';
-import pregnancyImg1 from '../../pregnancy-exercises-for-each-trimester.webp';
-import pregnancyImg2 from '../../Exercise_Pregnancy.jpg.jpeg';
-import yogaImg from '../../8-exercises-header-lr.jpg.jpeg';
-import workoutImg from '../../jkKCKPQqc6sCTO-FyS841DE7wzV3Y6qTCdPaiDMVSwzArtXMGO9y9hIDX4bQsn8nR-lx2oTyzsQ0-b1RuP8RewQyuVbL5VkJ2PKfuwxYdkhSL49AmvGVL799GIN5GjLZUKN50UsSj3VlC9_Mapfmbr8U34eG1vaH7ave9Hsm7d4crWu7eScY2Bmmd6d.jpg.jpeg';
-import transformationImg1 from '../../FubKuonT217qpXQGf4aGKaFUGZObYVwuIUSeC_s6xk_MKD8asFocNMazGUCoxHdiEy1omd3VhJMOuQyrKaaYQgX49pHfVx2LRsjCJL1rvCTR7qTXzdf-2H5kxUwEC25rWUktqpvEYpqpbi629PU5D53PM5Guk2Y5oePaHwzh5EnW2UVaAShe630ZB9U.jpg.jpeg';
-import transformationImg2 from '../../JtYLKHmOWrs0-GR9cV8DwOXi7Ll4iqBIxC6ZwVP4HGsFb1bKZnnM86kc7j8vTHV0koDCNAeswQRSOLXOb1Rv7yr677lB-5luel1fw_IcEd4FsF1YcEQDeGEcGEe5Q3cy1v329dcRBWZ2rqE8hkReSnFnNq5B0wszNXd29F73CwExyT0HSpyKL27O5xv.jpg.jpeg';
-import transformationImg3 from '../../z_8Ym_qBhjnMXU1NHOcpJrj3-wKfY6l958SRx04GoabHwvrYaiIxadR-06Cd17G2jzDajmfMCtRHQsHSb57Fy0R_97MO49PX0gX76yBT2LKIzX_UJMmJf-JwNg41AuLBHQV7cqm2jSvDw3zXmF3udOfMJcxel7KAE1VdpoFy4Vh7Wj24LLSWCmvKOxb.jpg.jpeg';
+// Image paths from the public/images/ directory
+const bannerImg = "/images/ff846035-aad8-4ba0-bac9-8d165cc1e016.png";
+const profileImg = "/images/istockphoto-2149222509-612x612.jpg.jpeg";
+const pregnancyImg1 = "/images/pregnancy-exercises-for-each-trimester.webp";
+const pregnancyImg2 = "/images/Exercise_Pregnancy.jpg.jpeg";
+const yogaImg = "/images/8-exercises-header-lr.jpg.jpeg";
+const workoutImg = "/images/workout.jpg";
+const transformationImg1 = "/images/transformation-1.jpg";
+const transformationImg2 = "/images/transformation-2.jpg";
+const transformationImg3 = "/images/transformation-3.jpg";
 
-// Expertise Images (Generated)
-import weightImg from '../../weight_mgmt.png';
-import strengthImg from '../../strength.png';
-import hormonalImg from '../../hormonal.png';
-import prenatalImg from '../../prenatal.png';
-import mobilityImg from '../../mobility.png';
-import lifestyleImg from '../../lifestyle.png';
+// Expertise Images
+const weightImg = "/images/weight_mgmt.png";
+const strengthImg = "/images/strength.png";
+const hormonalImg = "/images/hormonal.png";
+const prenatalImg = "/images/prenatal.png";
+const mobilityImg = "/images/mobility.png";
+const lifestyleImg = "/images/lifestyle.png";
 
 // Awareness Grid Images (from public/images/pink-angels/)
 const pcodImg = "/images/pink-angels/pcod_pcos.png";
