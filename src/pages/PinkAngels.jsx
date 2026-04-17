@@ -1,6 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/SEO';
+import PlanApplicationForm from '../forms/PlanApplicationForm';
 
 // Importing images from the root directory
 import bannerImg from '../../ff846035-aad8-4ba0-bac9-8d165cc1e016.png';
@@ -21,7 +22,15 @@ import prenatalImg from '../../prenatal.png';
 import mobilityImg from '../../mobility.png';
 import lifestyleImg from '../../lifestyle.png';
 
+// Awareness Grid Images (from public/images/pink-angels/)
+const pcodImg = "/images/pink-angels/pcod_pcos.png";
+const thyroidImg = "/images/pink-angels/thyroid.png";
+const scaleImg = "/images/pink-angels/weight_mgmt_2.png";
+const pregNutriImg = "/images/pink-angels/pregnancy_nutrition.png";
+
 const PinkAngels = () => {
+    const [showForm, setShowForm] = useState(false);
+
     const fadeIn = {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
@@ -41,7 +50,7 @@ const PinkAngels = () => {
         { title: "Weight Management", desc: "Sustainable fat reduction and weight loss strategies tailored for women.", img: weightImg },
         { title: "Strength Training", desc: "Build lean muscle, improve metabolism, and gain functional strength.", img: strengthImg },
         { title: "Hormonal Balance", desc: "Specialized guidance for managing PCOS, PCOD, and Thyroid through fitness.", img: hormonalImg },
-        { title: "Prenatal Fitness", desc: "Safe, effective workout programs for every trimester of pregnancy.", img: prenatalImg },
+        { title: "Prenatal Fitness", desc: "Safe, effective workout programs for every trimester of pregnancy.", img: pregnancyImg1 },
         { title: "Mobility & Posture", desc: "Corrective exercises to improve daily comfort and overall physical wellness.", img: mobilityImg },
         { title: "Long-term Lifestyle", desc: "Building consistent habits that outlast any temporary transformation.", img: lifestyleImg }
     ];
@@ -54,25 +63,71 @@ const PinkAngels = () => {
             />
 
             {/* Hero Section */}
-            <section className="relative py-20 md:py-32 bg-gradient-to-br from-pink-50 to-white overflow-hidden">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-pink-100/30 rounded-l-[10rem] -z-10 blur-3xl"></div>
+            <section className="relative py-20 md:py-32 bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 text-center">
-
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
+                    <motion.h2
+                        initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-6xl md:text-8xl font-black text-gray-900 uppercase tracking-tighter italic leading-none"
+                        transition={{ duration: 0.6 }}
+                        className="text-pink-500 font-black tracking-[0.3em] uppercase text-2xl mb-2"
                     >
-                        <span className="text-pink-600">Pink Angel</span>
+                        Women's
+                    </motion.h2>
+                    <motion.h1
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        className="text-6xl md:text-8xl font-black text-pink-600 uppercase tracking-tighter italic"
+                    >
+                        PINK ANGEL
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="mt-6 text-xl md:text-2xl text-gray-500 font-light max-w-3xl mx-auto font-serif italic"
+                        className="mt-4 text-xl md:text-2xl text-gray-500 font-light max-w-3xl mx-auto font-serif italic"
                     >
                         "Transforming lives through personalized fitness, nutrition, and expert guidance tailored for the female body."
                     </motion.p>
+
+                </div>
+            </section>
+
+            {/* Specialized Care Grid Section */}
+            <section className="pb-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4">
+                    <motion.div
+                        variants={staggerContainer}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+                    >
+                        {[
+                            { img: pcodImg, label: "PCOD / PCOS" },
+                            { img: thyroidImg, label: "Thyroid Issues" },
+                            { img: scaleImg, label: "Weight Management" },
+                            { img: pregNutriImg, label: "Pre & Post Pregnancy Nutrition" }
+                        ].map((item, i) => (
+                            <motion.div
+                                key={i}
+                                variants={fadeIn}
+                                className="relative rounded-3xl overflow-hidden shadow-xl group border-2 border-gray-100 flex flex-col h-full bg-white"
+                            >
+                                <div className="h-64 w-full flex items-center justify-center overflow-hidden p-2">
+                                    <img 
+                                        src={item.img} 
+                                        alt={item.label} 
+                                        className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105" 
+                                    />
+                                </div>
+                                <div className="bg-[#4ca54c] py-5 md:py-6 text-center mt-auto">
+                                    <span className="text-white font-black text-sm md:text-xl uppercase tracking-tighter px-4 block leading-tight">
+                                        {item.label}
+                                    </span>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
                 </div>
             </section>
 
@@ -172,7 +227,7 @@ const PinkAngels = () => {
                             >
                                 <h2 className="text-pink-600 font-bold uppercase tracking-widest text-sm mb-4">Motherhood & Fitness</h2>
                                 <h3 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 uppercase italic leading-none">
-                                    Pregnancy <br />
+                                    Pregnancy Workout  <br />
                                     <span className="text-pink-600">Benefits.</span>
                                 </h3>
                                 <p className="text-xl text-gray-500 mb-12 font-light leading-relaxed">
@@ -298,16 +353,26 @@ const PinkAngels = () => {
                             <p className="text-pink-100 text-xl md:text-2xl font-light mb-10 max-w-xl">
                                 Empower your health journey today with Pink Angels. Expert guidance tailored for you.
                             </p>
-                            <a
-                                href="/contact"
+                            <button
+                                onClick={() => setShowForm(true)}
                                 className="inline-block bg-white text-pink-700 px-10 py-4 rounded-full font-black text-xl uppercase tracking-widest hover:scale-105 transition-transform shadow-xl"
                             >
-                                Contact Now
-                            </a>
+                                Book Your Session
+                            </button>
                         </motion.div>
                     </div>
                 </div>
             </section>
+
+            {/* Modal Form */}
+            <AnimatePresence>
+                {showForm && (
+                    <PlanApplicationForm
+                        onClose={() => setShowForm(false)}
+                        title="Pink Angel Program"
+                    />
+                )}
+            </AnimatePresence>
         </div>
     );
 };

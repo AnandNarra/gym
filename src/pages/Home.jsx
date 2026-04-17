@@ -19,35 +19,30 @@ const Home = () => {
 
   return (
     <>
-      <SEO 
-        title="Home" 
-        description="VeFit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions." 
+      <SEO
+        title="Home"
+        description="VeFit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions."
       />
-      <Hero />
-
-
-
-
 
       {/* Main Categories Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
+
         {/* Pink Angels Card */}
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.6 }}
-           className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
-           style={{ backgroundImage: "url('/images/pink-angels-bg.webp')" }}
-           onClick={() => navigate('/pink-angels')}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
+          style={{ backgroundImage: "url('/images/pink-angels-bg.webp')" }}
+          onClick={() => navigate('/pink-angels')}
         >
-           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
-           <div className="relative z-10">
-             <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Pink Angels</h2>
-             <p className="text-gray-200 mb-8 font-light text-sm">Specialized fitness training for women's health & pregnancy.</p>
-             <span className="bg-pink-500 text-white uppercase font-bold py-3 px-8 rounded-full hover:bg-pink-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
-           </div>
+          <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Pink Angels</h2>
+            <p className="text-gray-200 mb-8 font-light text-sm">Specialized fitness training for women's health & pregnancy.</p>
+            <span className="bg-pink-500 text-white uppercase font-bold py-3 px-8 rounded-full hover:bg-pink-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
+          </div>
         </motion.div>
 
         {/* Training Parent Card */}
@@ -56,12 +51,13 @@ const Home = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
-          style={{ backgroundImage: "url('/images/training-parent.png')" }}
+          className="relative py-20 px-4 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
+          style={{ backgroundImage: "url('/images/training-nutrition-v2.jpg')" }}
           onClick={() => navigate('/training')}
         >
-          <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
+          <div className="absolute inset-0 bg-black/50 z-0 group-hover:bg-black/30 transition duration-500"></div>
           <div className="relative z-10">
+            <span className="text-yellow-500 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Men's & Women's</span>
             <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Training & Nutrition</h2>
             <p className="text-gray-200 mb-8 font-light text-sm">Expert Home/Online training and scientific diet plans.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
@@ -111,7 +107,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             {/* Image Column */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -120,9 +116,9 @@ const Home = () => {
             >
               <div className="absolute -inset-4 bg-yellow-500/10 rounded-3xl -rotate-3 z-0"></div>
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img 
-                  src="/images/founder.png" 
-                  alt="Mahesh Kagithala - Founder of veFit.in" 
+                <img
+                  src="/images/founder.png"
+                  alt="Mahesh Kagithala - Founder of veFit.in"
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-white text-center z-20">
@@ -133,7 +129,7 @@ const Home = () => {
             </motion.div>
 
             {/* Content Column */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -154,7 +150,7 @@ const Home = () => {
                 <p>
                   As a certified fitness trainer, I stepped into the industry with a strong desire to transform lives through health and discipline. Working across multiple gyms over the years, I didn’t just train clients — I studied the ecosystem deeply.
                 </p>
-                
+
                 <div className="bg-gray-50 p-8 rounded-2xl border-l-4 border-yellow-500 shadow-sm">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 uppercase">Building veFit.in</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-medium uppercase text-gray-700">
@@ -177,8 +173,8 @@ const Home = () => {
                 </div>
 
                 <div className="pt-8">
-                  <Link 
-                    to="/success-story" 
+                  <Link
+                    to="/success-story"
                     className="inline-block bg-yellow-500 text-gray-900 uppercase font-bold py-4 px-10 rounded-full hover:bg-yellow-400 transition-all shadow-lg hover:scale-105"
                   >
                     Read Full Story
