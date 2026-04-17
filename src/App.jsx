@@ -10,6 +10,7 @@ import Franchise from './pages/Franchise';
 import GymEquipments from './pages/GymEquipments';
 import Contact from './pages/Contact';
 import SuccessStory from './pages/SuccessStory';
+import PinkAngels from './pages/PinkAngels';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="gym-equipments" element={<GymEquipments />} />
           <Route path="contact" element={<Contact />} />
           <Route path="success-story" element={<SuccessStory />} />
+          <Route path="pink-angels" element={<PinkAngels />} />
         </Route>
       </Routes>
     </BrowserRouter>
