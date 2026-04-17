@@ -30,14 +30,32 @@ const Home = () => {
 
 
       {/* Main Categories Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
+        {/* Pink Angels Card */}
+        <motion.div
+           initial={{ opacity: 0, y: 30 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.6 }}
+           className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
+           style={{ backgroundImage: "url('/images/pink-angels-bg.webp')" }}
+           onClick={() => navigate('/pink-angels')}
+        >
+           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
+           <div className="relative z-10">
+             <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Pink Angels</h2>
+             <p className="text-gray-200 mb-8 font-light text-sm">Specialized fitness training for women's health & pregnancy.</p>
+             <span className="bg-pink-500 text-white uppercase font-bold py-3 px-8 rounded-full hover:bg-pink-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
+           </div>
+        </motion.div>
+
         {/* Training Parent Card */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
           style={{ backgroundImage: "url('/images/training-parent.png')" }}
           onClick={() => navigate('/training')}
@@ -73,7 +91,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="relative py-20 px-10 text-center rounded-3xl bg-cover bg-center overflow-hidden shadow-2xl group cursor-pointer"
           style={{ backgroundImage: "url('/images/gym-equipment-bg.png')" }}
           onClick={() => navigate('/gym-equipments')}
