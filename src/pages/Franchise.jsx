@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LeadsForm from '../forms/LeadsForm';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
+import Hero from '../components/Hero';
 
 const Franchise = () => {
   const [showForm, setShowForm] = useState(false);
@@ -23,6 +24,9 @@ const Franchise = () => {
         title="Franchise Opportunity"
         description="Launch a profitable fitness business with VeFit.in. We offer location analysis, equipment supply, and complete marketing support."
       />
+
+
+      <Hero />
       {/* Hero Section */}
       <section className="relative py-32 bg-gray-900 text-white overflow-hidden text-center">
         <div className="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/franchise-bg.png')" }}></div>
@@ -76,12 +80,12 @@ const Franchise = () => {
               className="relative h-64 rounded-2xl overflow-hidden group shadow-xl hover:shadow-2xl transition-all cursor-pointer border border-gray-100"
             >
               {/* Background Image with Overlay */}
-              <div 
+              <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                 style={{ backgroundImage: `url('${item.image}')` }}
               ></div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 z-0"></div>
-              
+
               {/* Content */}
               <div className="relative z-10 p-6 h-full flex flex-col justify-end">
                 <div className="text-3xl mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">{item.icon}</div>
