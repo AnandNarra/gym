@@ -27,24 +27,24 @@ const SuccessStory = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-16 items-start">
+      <section className="py-12 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
           {/* Side Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:w-1/3 sticky top-32"
+            className="w-full lg:w-1/3 lg:sticky lg:top-32 mb-10 lg:mb-0"
           >
             <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-100">
               <img
                 src="/images/founder.png"
                 alt="Mahesh Kagithala - Founder of veFit.in"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover max-h-[400px] lg:max-h-none"
               />
             </div>
             <div className="mt-6 p-6 bg-gray-900 rounded-2xl shadow-xl text-center">
-              <div className="text-xl font-bold uppercase tracking-widest leading-none mb-1 text-white">Mahesh Kagithala</div>
+              <div className="text-xl font-bold uppercase tracking-widest leading-none mb-2 text-white">Mahesh Kagithala</div>
               <div className="text-yellow-500 text-[10px] uppercase font-bold tracking-[0.4em]">Founder</div>
             </div>
             <div className="mt-8 p-6 bg-yellow-500 rounded-2xl text-gray-900">
@@ -54,14 +54,14 @@ const SuccessStory = () => {
           </motion.div>
 
           {/* Detailed Story */}
-          <div className="lg:w-2/3 space-y-12">
+          <div className="w-full lg:w-2/3 space-y-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="prose prose-lg text-gray-600 font-light leading-relaxed max-w-none"
+              className="prose prose-base md:prose-lg text-gray-600 font-light leading-relaxed max-w-none"
             >
-              <h2 className="text-3xl font-bold text-gray-900 uppercase mb-6">The Beginning</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase mb-6">The Beginning</h2>
               <p className="mb-6">
                 In 2011, the journey began with a simple passion — <strong>fitness</strong>.
               </p>
@@ -69,7 +69,7 @@ const SuccessStory = () => {
                 As a certified fitness trainer, I stepped into the industry with a strong desire to transform lives through health and discipline. Working across multiple gyms over the years, I didn’t just train clients — I studied the ecosystem deeply. From training methodologies and equipment usage to understanding customer behavior and gym operations, every day was a learning experience.
               </p>
 
-              <h2 className="text-3xl font-bold text-gray-900 uppercase mb-6">Building veFit.in</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase mb-6">Building veFit.in</h2>
               <p className="mb-6">
                 The journey from trainer to entrepreneur wasn’t easy, but it was driven by clarity and experience. In the last 5 years, we have achieved significant milestones that have shaped our identity:
               </p>
@@ -92,7 +92,7 @@ const SuccessStory = () => {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-gray-900 uppercase mb-6">What Makes Us Different</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase mb-6">What Makes Us Different</h2>
               <div className="space-y-4 mb-8">
                 {[
                   'Standardized training systems for consistent results',
