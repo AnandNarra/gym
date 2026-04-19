@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="relative h-screen bg-black overflow-hidden relative">
+    <div className="relative h-[60vh] md:h-screen bg-black overflow-hidden">
       <video
         autoPlay
         loop
@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto">
         <motion.h1
-          className="text-7xl md:text-9xl font-black mb-2 tracking-tighter leading-none"
+          className="text-5xl sm:text-7xl md:text-9xl font-black mb-2 tracking-tighter leading-none"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -28,7 +28,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-xl md:text-3xl text-white/90 mb-6 font-medium tracking-tight"
+          className="text-lg sm:text-xl md:text-3xl text-white/90 mb-6 font-medium tracking-tight"
           style={{ fontFamily: "'Inter', sans-serif" }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.p
-          className="text-lg md:text-2xl text-yellow-500 mb-10 font-bold uppercase tracking-[0.2em]"
+          className="text-base sm:text-lg md:text-2xl text-yellow-500 mb-10 font-bold uppercase tracking-[0.2em]"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
