@@ -4,7 +4,7 @@ import SEO from '../components/SEO';
 
 const SuccessStory = () => {
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white">
       <SEO
         title="Success Story"
         description="The journey of veFit.in – From a passionate trainer to a scalable fitness ecosystem. Read our founder's story."
