@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
-import Testimonial from '../components/Testimonial';
+import MemberCarousel from '../components/MemberCarousel';
 import { FaDumbbell, FaUtensils, FaHeartbeat } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
@@ -192,45 +192,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-gray-50">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4"><span className="text-yellow-500">Member</span> Stories</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-              <Testimonial
-                name="Mark T."
-                role="Weight Loss Program"
-                review="I lost 15kg in 3 months! The dietary plan was easy to follow and the trainers are incredibly supportive."
-                image="https://i.pravatar.cc/150?img=11"
-              />
-            </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}>
-              <Testimonial
-                name="Sarah W."
-                role="Online Training"
-                review="Working remotely made it hard to hit the gym. Online training kept me accountable and in shape."
-                image="https://i.pravatar.cc/150?img=5"
-              />
-            </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}>
-              <Testimonial
-                name="James D."
-                role="Muscle Gain"
-                review="The hypertrophy program completely changed my physique. Went from 65kg to 78kg lean muscle."
-                image="https://i.pravatar.cc/150?img=12"
-              />
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
+      <MemberCarousel />
 
 
 
