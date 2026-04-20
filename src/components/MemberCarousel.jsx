@@ -15,13 +15,13 @@ const members = [
   },
   {
     id: 2,
-    name: "Sneha Reddy",
-    goal: "PCOD & Weight Management",
+    name: "Rohit Desai",
+    goal: "Fat Loss & Muscle Toning",
     duration: "6 Months",
     image: "/images/members/member-2.jpg",
     rating: 5,
-    story: "Managing PCOD was overwhelming. The focused workouts and balanced nutrition plan specifically customized for me changed my life. Regained my cycle and lost 12kg.",
-    stats: "Weight: 75kg -> 63kg"
+    story: "Balancing a hectic corporate job and health was overwhelming. The focused workouts and balanced nutrition plan specifically customized for me changed my life. I dropped the extra fat and gained solid muscle.",
+    stats: "Weight: 85kg -> 73kg"
   },
   {
     id: 3,
@@ -35,13 +35,13 @@ const members = [
   },
   {
     id: 4,
-    name: "Priya Sharma",
-    goal: "Post-Pregnancy Fitness",
+    name: "Aman Gupta",
+    goal: "Strength & Conditioning",
     duration: "1 Year",
     image: "/images/members/member-4.jpg",
     rating: 5,
-    story: "After my second child, I had no core strength. The Pink Angels program helped me safely rebuild my core and lose the post-pregnancy weight. Highly recommend!",
-    stats: "Waist: 36in -> 28in"
+    story: "After recovering from a sedentary lifestyle, I had no core strength. The coaches helped me safely rebuild my core and drastically improve my overall conditioning. Highly recommend!",
+    stats: "Deadlift: 60kg -> 140kg"
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const members = [
   },
   {
     id: 6,
-    name: "Kavya Menon",
+    name: "Karan Patel",
     goal: "General Fitness & Toning",
     duration: "3 Months",
     image: "/images/members/member-6.jpg",
@@ -75,7 +75,7 @@ const members = [
   },
   {
     id: 8,
-    name: "Neha Gupta",
+    name: "Siddharth Nair",
     goal: "Transformation",
     duration: "10 Months",
     image: "/images/members/member-8.jpg",
