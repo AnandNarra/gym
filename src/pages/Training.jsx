@@ -6,24 +6,38 @@ import SEO from '../components/SEO';
 const Training = () => {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
-      <SEO 
-        title="Training" 
-        description="Choose between personalized Home Training and comprehensive Online Coaching programs designed to fit your lifestyle." 
+      <SEO
+        title="Training"
+        description="Choose between personalized Home Training and comprehensive Online Coaching programs designed to fit your lifestyle."
       />
 
-      {/* Full-Width Featured Video Section */}
-      <section className="w-full bg-black overflow-hidden group mb-12">
-        <div className="w-full aspect-video md:aspect-[21/9] relative">
-          <video 
-            src="/videos/training-video-v2.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            className="w-full h-full object-cover opacity-90 transition-opacity duration-700 group-hover:opacity-100"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
-        </div>
+      {/* Full-Width Featured Hero Section */}
+      <section className="relative h-[40vh] md:h-[60vh] bg-black overflow-hidden group">
+        <img
+          src="/images/training-hero.png"
+          alt="Training Programs"
+          className="absolute inset-0 w-full h-full object-cover object-top opacity-80 transition-transform duration-1000 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
+        {/* <div className="relative h-full flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto z-10">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-7xl font-black text-white uppercase tracking-tighter italic"
+          >
+            Our <span className="text-yellow-500">Training</span> Programs
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mt-4 text-lg md:text-2xl text-gray-200 font-light max-w-3xl font-serif italic"
+          >
+            Empowering your fitness journey with personalized coaching that fits your life.
+          </motion.p>
+        </div> */}
       </section>
 
       <div id="training-grid" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 scroll-mt-20">
