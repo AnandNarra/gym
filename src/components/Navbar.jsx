@@ -22,11 +22,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex flex-col justify-center items-center">
-              <div className="text-3xl font-extrabold tracking-tight">
+            <Link to="/" className="flex flex-col justify-center items-start md:items-center">
+              <div className="text-xl md:text-3xl font-extrabold tracking-tight">
                 <span style={{ color: '#2b4a7d' }}>vefit</span><span style={{ color: '#6ec344' }}>.in</span>
               </div>
-              <span className="text-[10px] text-gray-500 font-medium mt-[-2px]">Training. Gym equipment. Supplements.</span>
+              <span className="text-[7px] md:text-[10px] text-gray-500 font-medium mt-[-2px] whitespace-nowrap">Training. Gym equipment. Supplements.</span>
             </Link>
           </div>
           <div className="hidden lg:flex items-center space-x-6">

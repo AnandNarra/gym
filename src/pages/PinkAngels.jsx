@@ -274,7 +274,7 @@ const PinkAngels = () => {
                                     />
                                 </div>
                                 <div className={`${selectedCondition === item.label ? 'bg-pink-600' : 'bg-[#4ca54c]'} py-3 md:py-4 text-center mt-auto transition-colors duration-300`}>
-                                    <span className="text-white font-black text-[10px] md:text-sm uppercase tracking-tighter px-2 block leading-tight">
+                                    <span className="text-white font-black text-xs md:text-sm uppercase tracking-tighter px-2 block leading-tight">
                                         {item.label}
                                     </span>
                                 </div>

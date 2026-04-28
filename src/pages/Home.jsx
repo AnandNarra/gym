@@ -44,8 +44,8 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
             <span className="text-pink-400 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Womens</span>
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Pink Angels</h2>
-            <p className="text-gray-200 mb-8 font-light text-sm">Specialized fitness training for women's health & pregnancy.</p>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Pink Angels</h2>
+            <p className="text-gray-200 mb-8 font-light text-xs md:text-sm">Specialized fitness training for women's health & pregnancy.</p>
             <span className="bg-pink-500 text-white uppercase font-bold py-3 px-8 rounded-full hover:bg-pink-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
           </div>
         </motion.div>
@@ -63,8 +63,8 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/50 z-0 group-hover:bg-black/30 transition duration-500"></div>
           <div className="relative z-10">
             <span className="text-yellow-500 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Men's & Women's</span>
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Training & Nutrition</h2>
-            <p className="text-gray-200 mb-8 font-light text-sm">Expert Home/Online training and scientific diet plans.</p>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Training & Nutrition</h2>
+            <p className="text-gray-200 mb-8 font-light text-xs md:text-sm">Expert Home/Online training and scientific diet plans.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
           </div>
         </motion.div>
@@ -81,8 +81,8 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Franchise Offering</h2>
-            <p className="text-gray-200 mb-8 font-light text-sm">End-to-end solutions for setting up and scaling your gym business.</p>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Franchise Offering</h2>
+            <p className="text-gray-200 mb-8 font-light text-xs md:text-sm">End-to-end solutions for setting up and scaling your gym business.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">Learn More</span>
           </div>
         </motion.div>
@@ -99,8 +99,8 @@ const Home = () => {
         >
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold uppercase mb-4 text-white tracking-wider">Gym Equipment</h2>
-            <p className="text-gray-200 mb-8 font-light text-sm">High-quality multi-gym equipment from leading global brands.</p>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Gym Equipment</h2>
+            <p className="text-gray-200 mb-8 font-light text-xs md:text-sm">High-quality multi-gym equipment from leading global brands.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Brands</span>
           </div>
         </motion.div>
