@@ -28,6 +28,7 @@ const pcodImg = "/images/pink-angels/pcod_pcos.png";
 const thyroidImg = "/images/pink-angels/thyroid.png";
 const scaleImg = "/images/pink-angels/weight_mgmt_2.png";
 const pregNutriImg = "/images/pink-angels/pregnancy_nutrition.png";
+const gynecologistImg = "/images/pink-angels/gynecologist.png";
 
 const conditionData = {
     "PCOD / PCOS": {
@@ -96,6 +97,17 @@ const conditionData = {
                 ]
             }
         ]
+    },
+    "Gynecologist Consultation": {
+        title: "Gynecologist Consultation",
+        mainReason: "🩺 Expert Medical Guidance",
+        reasons: [
+            { id: 1, title: "Dr. Sarah Johnson", desc: "Senior Gynecologist with 15+ years experience in hormonal health and fertility." },
+            { id: 2, title: "Dr. Priya Sharma", desc: "Specialist in PCOD/PCOS management and adolescent gynecology." },
+            { id: 3, title: "Dr. Anita Desai", desc: "Expert in pre-natal and post-natal care with a holistic approach." },
+            { id: 4, title: "Dr. Megha Rao", desc: "Consultant for women-related issues including menstrual disorders and menopause." }
+        ],
+        footerNote: "Book your appointment to discuss any women-related health issues with our expert gynecologists."
     }
 };
 
@@ -239,9 +251,10 @@ const PinkAngels = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-6"
                     >
                         {[
+                            { img: gynecologistImg, label: "Gynecologist Consultation" },
                             { img: pcodImg, label: "PCOD / PCOS" },
                             { img: thyroidImg, label: "Thyroid Issues" },
                             { img: scaleImg, label: "Weight Management" },
@@ -253,15 +266,15 @@ const PinkAngels = () => {
                                 onClick={() => setSelectedCondition(item.label)}
                                 className={`relative rounded-3xl overflow-hidden shadow-xl group border-2 flex flex-col h-full bg-white cursor-pointer transition-all duration-300 ${selectedCondition === item.label ? 'border-pink-500 scale-[1.02] ring-4 ring-pink-50' : 'border-gray-100 hover:border-pink-200'}`}
                             >
-                                <div className="h-64 w-full flex items-center justify-center overflow-hidden p-2">
+                                <div className="h-48 w-full flex items-center justify-center overflow-hidden p-2">
                                     <img
                                         src={item.img}
                                         alt={item.label}
                                         className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                                     />
                                 </div>
-                                <div className={`${selectedCondition === item.label ? 'bg-pink-600' : 'bg-[#4ca54c]'} py-5 md:py-6 text-center mt-auto transition-colors duration-300`}>
-                                    <span className="text-white font-black text-sm md:text-xl uppercase tracking-tighter px-4 block leading-tight">
+                                <div className={`${selectedCondition === item.label ? 'bg-pink-600' : 'bg-[#4ca54c]'} py-3 md:py-4 text-center mt-auto transition-colors duration-300`}>
+                                    <span className="text-white font-black text-[10px] md:text-sm uppercase tracking-tighter px-2 block leading-tight">
                                         {item.label}
                                     </span>
                                 </div>
