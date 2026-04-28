@@ -9,7 +9,7 @@ const Navbar = () => {
   const links = [
     { name: 'Home', path: '/' },
     { name: 'Pink Angel', path: '/pink-angels' },
-    { name: 'Training', path: '/training' },
+    { name: 'Training and Gyms', path: '/training' },
     { name: 'Franchise', path: '/franchise' },
     { name: 'Equipments', path: '/gym-equipments' },
 
