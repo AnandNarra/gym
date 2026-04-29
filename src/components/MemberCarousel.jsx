@@ -10,7 +10,7 @@ const members = [
     duration: "5 Months",
     image: "/images/members/member-1.jpg",
     rating: 5,
-    story: "I struggled with my weight for years. The personalized attention at veFit.in along with a strict dietary plan helped me shed 18 kilos. I feel more energetic than ever!",
+    story: "I struggled with my weight for years. The personalized attention at colfit.in along with a strict dietary plan helped me shed 18 kilos. I feel more energetic than ever!",
     stats: "Body Fat: 28% -> 15%"
   },
   {
@@ -30,7 +30,7 @@ const members = [
     duration: "8 Months",
     image: "/images/members/member-3.jpg",
     rating: 5,
-    story: "I wanted to build serious muscle and step on stage. The trainers at veFit pushed me past my limits. Went from a skinny frame to a confident, muscular build.",
+    story: "I wanted to build serious muscle and step on stage. The trainers at colfit pushed me past my limits. Went from a skinny frame to a confident, muscular build.",
     stats: "Lean Mass: +8kg"
   },
   {
@@ -106,7 +106,7 @@ const MemberCarousel = () => {
       </div>
 
       {/* Marquee Wrapper */}
-      <div 
+      <div
         className="w-full relative flex overflow-x-hidden"
         style={{ paddingBottom: '20px' }}
       >
@@ -139,11 +139,11 @@ const MemberCarousel = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-white text-xl font-bold uppercase tracking-wider">{member.name}</h3>
                 <p className="text-yellow-400 text-sm font-semibold mb-2">{member.goal}</p>
-                
+
                 {/* Rating Stars */}
                 <div className="flex text-yellow-500 mb-2">
                   {[...Array(5)].map((_, i) => (
-                     <FaStar key={i} className={i < member.rating ? "text-yellow-500" : "text-gray-400"} size={12} />
+                    <FaStar key={i} className={i < member.rating ? "text-yellow-500" : "text-gray-400"} size={12} />
                   ))}
                 </div>
               </div>
@@ -170,7 +170,7 @@ const MemberCarousel = () => {
 
                     <div className="flex text-yellow-500 mb-4">
                       {[...Array(5)].map((_, i) => (
-                         <FaStar key={i} className={i < member.rating ? "text-yellow-500" : "text-gray-200"} size={14} />
+                        <FaStar key={i} className={i < member.rating ? "text-yellow-500" : "text-gray-200"} size={14} />
                       ))}
                     </div>
 
@@ -193,7 +193,8 @@ const MemberCarousel = () => {
         </div>
       </div>
 
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(calc(-100% / 3)); }

@@ -24,7 +24,7 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span style={{ color: '#2b4a7d' }}>vefit</span><span style={{ color: '#6ec344' }}>.in</span>
+          <span style={{ color: '#2b4a7d' }}>colfit</span><span style={{ color: '#6ec344' }}>.in</span>
         </motion.h1>
 
         <motion.p

@@ -22,7 +22,7 @@ const Franchise = () => {
     <div className="min-h-screen bg-white">
       <SEO
         title="Franchise Opportunity"
-        description="Launch a profitable fitness business with VeFit.in. We offer location analysis, equipment supply, and complete marketing support."
+        description="Launch a profitable fitness business with colfit.in. We offer location analysis, equipment supply, and complete marketing support."
       />
 
 
@@ -37,7 +37,7 @@ const Franchise = () => {
             className="flex flex-col items-center"
           >
             <span className="text-yellow-500 uppercase tracking-[0.3em] text-sm font-semibold mb-6 drop-shadow-sm">
-              The VeFit Advantage
+              The colfit Advantage
             </span>
             <p className="text-white text-4xl md:text-6xl font-black mb-8 tracking-tighter uppercase italic leading-none">
               Own Your Gym. <br className="md:hidden" />
@@ -105,7 +105,7 @@ const Franchise = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold uppercase mb-8 text-gray-900">
-                Why Choose <span className="text-yellow-500">VeFit.in</span>
+                Why Choose <span className="text-yellow-500">colfit.in</span>
               </h2>
               <ul className="space-y-6">
                 <li className="flex items-center text-lg text-gray-600">
@@ -129,7 +129,7 @@ const Franchise = () => {
             <div className="text-center">
               <div className="p-8 bg-gray-900 rounded-3xl text-white">
                 <h3 className="text-2xl font-bold mb-6">Ready to expand?</h3>
-                <p className="text-gray-400 mb-8 font-light">Join the VeFit network and transform the fitness industry in your city.</p>
+                <p className="text-gray-400 mb-8 font-light">Join the colfit network and transform the fitness industry in your city.</p>
                 <button
                   onClick={() => setShowForm(true)}
                   className="w-full bg-yellow-500 text-gray-900 uppercase font-bold py-4 rounded-xl hover:bg-yellow-400 transition-all shadow-lg"

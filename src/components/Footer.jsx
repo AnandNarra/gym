@@ -10,12 +10,12 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 border-b border-gray-800 pb-16">
-          
+
           {/* Brand Column */}
           <div className="space-y-6">
             <Link to="/" className="inline-flex flex-col">
               <div className="text-4xl font-black tracking-tighter leading-none">
-                <span className="text-white">vefit</span><span className="text-[#6ec344]">.in</span>
+                <span className="text-white">colfit</span><span className="text-[#6ec344]">.in</span>
               </div>
               <span className="text-[10px] text-gray-500 uppercase font-bold tracking-[0.2em] mt-1 ml-1">The Fitness Hub</span>
             </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-4 text-sm">
                 <FaEnvelope className="text-[#6ec344] flex-shrink-0" />
-                <span>info@vefit.in</span>
+                <span>info@colfit.in</span>
               </div>
             </div>
           </div>
