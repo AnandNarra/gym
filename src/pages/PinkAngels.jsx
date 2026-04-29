@@ -263,7 +263,13 @@ const PinkAngels = () => {
                             <motion.div
                                 key={i}
                                 variants={fadeIn}
-                                onClick={() => setSelectedCondition(item.label)}
+                                onClick={() => {
+                                    if (item.label === "Gynecologist Consultation") {
+                                        navigate('/hospitals');
+                                    } else {
+                                        setSelectedCondition(item.label);
+                                    }
+                                }}
                                 className={`relative rounded-3xl overflow-hidden shadow-xl group border-2 flex flex-col h-full bg-white cursor-pointer transition-all duration-300 ${selectedCondition === item.label ? 'border-pink-500 scale-[1.02] ring-4 ring-pink-50' : 'border-gray-100 hover:border-pink-200'}`}
                             >
                                 <div className="h-48 w-full flex items-center justify-center overflow-hidden p-2">
@@ -332,7 +338,7 @@ const PinkAngels = () => {
                                     <div className="flex-grow overflow-y-auto p-6 md:p-16 custom-scrollbar">
                                         <div className="relative">
                                             <div className="absolute top-0 right-0 w-64 h-64 bg-pink-100 rounded-full blur-3xl -mr-32 -mt-32 opacity-30"></div>
-                                            
+
                                             {conditionData[selectedCondition].sections ? (
                                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                                                     {conditionData[selectedCondition].sections.map((section, idx) => (

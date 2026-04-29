@@ -21,7 +21,7 @@ const Home = () => {
     <>
       <SEO
         title="Home"
-        description="VeFit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions."
+        description="colfit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions."
       />
 
       <Hero />
@@ -123,7 +123,7 @@ const Home = () => {
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
                 <img
                   src="/images/founder.png"
-                  alt="Mahesh Kagithala - Founder of veFit.in"
+                  alt="Mahesh Kagithala - Founder of colfit.in"
                   className="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-white text-center z-20">
@@ -144,7 +144,7 @@ const Home = () => {
               <div>
                 <span className="text-yellow-600 uppercase tracking-widest text-sm font-bold mb-2 block">Our Roots</span>
                 <h2 className="text-4xl md:text-5xl font-bold uppercase text-gray-900 leading-tight">
-                  Founder Story – <span className="text-yellow-500">veFit.in</span>
+                  Founder Story – <span className="text-yellow-500">colfit.in</span>
                 </h2>
               </div>
 
@@ -157,7 +157,7 @@ const Home = () => {
                 </p>
 
                 <div className="bg-gray-50 p-8 rounded-2xl border-l-4 border-yellow-500 shadow-sm">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 uppercase">Building veFit.in</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 uppercase">Building colfit.in</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-medium uppercase text-gray-700">
                     <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> 3 Owned Gyms Established</div>
                     <div className="flex items-center"><span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span> 7+ Managed Partner Gyms</div>
@@ -207,7 +207,7 @@ const Home = () => {
         >
           <h2 className="text-3xl md:text-5xl font-bold uppercase mb-6"><span className="text-yellow-500">About</span> Our Gym</h2>
           <p className="text-gray-500 text-lg max-w-3xl mx-auto font-light leading-relaxed">
-            Welcome to vefit.in, the premier location for fitness enthusiasts. We provide an encouraging community, professional coaches,
+            Welcome to colfit.in, the premier location for fitness enthusiasts. We provide an encouraging community, professional coaches,
             and tailored programs to help you transform your lifestyle. Experience the best workout environment with world-class facilities.
           </p>
         </motion.div>

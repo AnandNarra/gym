@@ -63,6 +63,7 @@ const Training = () => {
           >
             <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
             <div className="relative z-10">
+              <span className="text-yellow-500 text-xs font-black uppercase tracking-widest mb-2 block">Male & Female</span>
               <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white">Trainers</h2>
               <p className="text-gray-200 mb-8 font-light text-sm">
                 Access our network of expert collaborator trainers. View certified professionals soon.
@@ -79,6 +80,7 @@ const Training = () => {
           >
             <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none group-hover:bg-black/60 transition duration-500"></div>
             <div className="relative z-10">
+              <span className="text-yellow-500 text-xs font-black uppercase tracking-widest mb-2 block">Male & Female</span>
               <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white">Training</h2>
               <p className="text-gray-200 mb-8 font-light text-sm">
                 Explore our personalized Home Training, Online Coaching, and Nutrition Plans.

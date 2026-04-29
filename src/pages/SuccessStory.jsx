@@ -7,7 +7,7 @@ const SuccessStory = () => {
     <div className="min-h-screen bg-white">
       <SEO
         title="Success Story"
-        description="The journey of veFit.in – From a passionate trainer to a scalable fitness ecosystem. Read our founder's story."
+        description="The journey of colfit.in – From a passionate trainer to a scalable fitness ecosystem. Read our founder's story."
       />
 
       {/* Hero Header */}
@@ -21,7 +21,7 @@ const SuccessStory = () => {
             Our <span className="text-yellow-500">Success Story</span>
           </motion.h1>
           <p className="text-gray-400 text-lg font-light max-w-2xl mx-auto">
-            The evolution of veFit.in from a passion project to India's growing fitness network.
+            The evolution of colfit.in from a passion project to India's growing fitness network.
           </p>
         </div>
       </section>
@@ -39,7 +39,7 @@ const SuccessStory = () => {
             <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-100">
               <img
                 src="/images/founder.png"
-                alt="Mahesh Kagithala - Founder of veFit.in"
+                alt="Mahesh Kagithala - Founder of colfit.in"
                 className="w-full h-auto object-cover max-h-[400px] lg:max-h-none"
               />
             </div>
@@ -69,7 +69,7 @@ const SuccessStory = () => {
                 As a certified fitness trainer, I stepped into the industry with a strong desire to transform lives through health and discipline. Working across multiple gyms over the years, I didn’t just train clients — I studied the ecosystem deeply. From training methodologies and equipment usage to understanding customer behavior and gym operations, every day was a learning experience.
               </p>
 
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase mb-6">Building veFit.in</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 uppercase mb-6">Building colfit.in</h2>
               <p className="mb-6">
                 The journey from trainer to entrepreneur wasn’t easy, but it was driven by clarity and experience. In the last 5 years, we have achieved significant milestones that have shaped our identity:
               </p>

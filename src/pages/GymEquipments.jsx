@@ -7,7 +7,7 @@ const GymEquipments = () => {
   const [showForm, setShowForm] = useState(false);
 
   const brands = [
-    { name: 'Vefit Equipment', logo: '/images/brands/vefit-equipment-logo.png' },
+    { name: 'colfit Equipment', logo: '/images/brands/colfit-equipment-logo.png' },
     { name: 'Aerofit', logo: '/images/brands/aerofit-logo.jpg' },
     { name: 'Maxfit', logo: '/images/brands/maxfit-logo.png' },
     { name: 'Realleader USA', logo: '/images/brands/realleader-logo.png' },
@@ -87,7 +87,7 @@ const GymEquipments = () => {
       <section className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white p-12 rounded-3xl shadow-2xl border border-gray-100 italic font-light text-2xl md:text-3xl leading-relaxed text-gray-700">
-            "At VeFit.in, we don’t just support businesses — we build <span className="text-yellow-500 font-bold not-italic">fitness brands</span>."
+            "At colfit.in, we don’t just support businesses — we build <span className="text-yellow-500 font-bold not-italic">fitness brands</span>."
           </div>
           <p className="mt-12 text-gray-500 text-lg max-w-3xl mx-auto leading-relaxed">
             We offer financial assistance to make your fitness dream more accessible. Whether it's business strategies or marketing guidance, we are your partner in success.

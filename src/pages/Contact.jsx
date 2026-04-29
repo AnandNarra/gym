@@ -24,14 +24,14 @@ const Contact = () => {
   };
 
   const openWhatsApp = () => {
-    window.open(`https://wa.me/919515567932?text=${encodeURIComponent("Hi veFit.in, I have an inquiry.")}`, "_blank");
+    window.open(`https://wa.me/919515567932?text=${encodeURIComponent("Hi colfit.in, I have an inquiry.")}`, "_blank");
   };
 
   return (
     <div className="min-h-screen bg-white pt-20 pb-24">
       <SEO
         title="Contact Us"
-        description="Get in touch with VeFit.in to start your fitness journey. We're here to help with training, nutrition, and gym business setup."
+        description="Get in touch with colfit.in to start your fitness journey. We're here to help with training, nutrition, and gym business setup."
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 text-center uppercase mb-6 tracking-tight">
@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-gray-900 font-bold mb-1">Email Address</h4>
-                <p className="text-gray-500 font-light">info@vefit.in</p>
+                <p className="text-gray-500 font-light">info@colfit.in</p>
               </div>
             </div>
 
