@@ -63,7 +63,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/50 z-0 group-hover:bg-black/30 transition duration-500"></div>
           <div className="relative z-10">
             <span className="text-yellow-500 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Men's & Women's</span>
-            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Training & Nutrition</h2>
+            <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white tracking-wider">Gyms & Trainers</h2>
             <p className="text-gray-200 mb-8 font-light text-xs md:text-sm">Expert Home/Online training and scientific diet plans.</p>
             <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block group-hover:scale-105">View Plans</span>
           </div>
