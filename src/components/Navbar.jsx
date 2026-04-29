@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { path } from 'framer-motion/client';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,7 @@ const Navbar = () => {
   const links = [
     { name: 'Home', path: '/' },
     { name: 'Pink Angel', path: '/pink-angels' },
+    { name: 'Doctors ', path: '/hospitals' },
     { name: 'Gyms & Trainers', path: '/training' },
     { name: 'Franchise', path: '/franchise' },
     { name: 'Equipments', path: '/gym-equipments' },

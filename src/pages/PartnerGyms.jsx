@@ -13,7 +13,7 @@ const PartnerGyms = () => {
       rating: "5.0",
       reviews: "305",
       address: "F8JV+VGC, Kondapur, Venkateshwara Nagar, Serilingampalle (M), Telangana 500084",
-      phone: "096663 24419",
+      phone: "99597 61403",
       hours: "6:00 AM - 12:00 PM | 4:00 PM - 10:00 PM",
       description: "Train together. Stay stronger. 💪❤️ Join our Exclusive Couple Plans and transform together! Limited slots available – Join now!",
       features: [
@@ -26,6 +26,135 @@ const PartnerGyms = () => {
         "Clean Space",
         "Diet Plan"
       ]
+    },
+    {
+      id: 2,
+      name: "Sky9 Fitness Studio | Tolichowki",
+      image: "/images/sky9-fitness.png",
+      rating: "4.2",
+      reviews: "60",
+      address: "MCH Colony, Salarjung Colony, Nizam Colony, Toli Chowki, Hyderabad, Telangana 500008",
+      phone: "99597 61403",
+      hours: "6:00 AM - 11:30 PM",
+      description: "Sky9 Fitness Studio is an excellent gym with top-class amenities and a very positive workout environment. The equipment is modern, well-maintained, and suitable for all fitness levels. The gym is clean, spacious, and well organized.",
+      features: [
+        "Top-class Amenities",
+        "Modern Equipment",
+        "Well Maintained",
+        "Spacious Layout",
+        "Positive Atmosphere",
+        "Variety of Machines",
+        "Helpful Trainers",
+        "Aesthetic Lighting"
+      ]
+    },
+    {
+      id: 3,
+      name: "A1 Fitness",
+      image: "/images/a1-fitness.png",
+      rating: "4.6",
+      reviews: "161",
+      address: "Silver Oak Complex, 10-5-12/2/30/401, Ahmed Nagar, Masab Tank, Hyderabad, Telangana 500028",
+      phone: "99597 61403",
+      hours: "6:00 AM - 11:00 PM",
+      description: "A1 Fitness is well-equipped with weights, workout machines, and accessories. It offers a friendly atmosphere and centrally air-conditioned facilities with a high standard of hygiene.",
+      features: [
+        "Well Equipped",
+        "Central AC",
+        "Drinking Water",
+        "Clean Washrooms",
+        "Friendly Staff",
+        "Affordable Price",
+        "Experienced Trainers",
+        "Hygienic Environment"
+      ],
+      imagePosition: "object-top"
+    },
+    {
+      id: 4,
+      name: "Vintage Fitness Gym",
+      image: "/images/vintage-fitness.png",
+      rating: "4.8",
+      reviews: "360",
+      address: "1-57/19, above Royal Fruit Shop, Kondapur, Sri Ram Nagar, Gachibowli, Hyderabad, Telangana 500084",
+      phone: "99597 61403",
+      hours: "6:00 AM - 10:00 PM",
+      description: "Vintage Fitness Gym is one of the best gyms in the area with a wonderful environment to workout. It features a huge collection of equipment and amazing personal trainers like Tarun, Sameer, and Raju who guide you through your fitness journey.",
+      features: [
+        "Personal Training",
+        "Diet Planning",
+        "Supportive Trainers",
+        "Huge Equipment Collection",
+        "Motivating Environment",
+        "Safe & Hygienic",
+        "Expert Guidance",
+        "Modern Facility"
+      ]
+    },
+    {
+      id: 5,
+      name: "Primezone Fitness - [ PREMIUM ]",
+      image: "/images/primezone-fitness.png",
+      rating: "4.8",
+      reviews: "119",
+      address: "304, Ayyappa Society Main Rd, Ayyappa Society, Madhapur, Hyderabad, Telangana 500081",
+      phone: "99597 61403",
+      hours: "6:00 AM - 11:30 PM",
+      description: "Join Primezone Fitness for a premium fitness experience at an affordable price. We offer brand new, advanced equipment and a highly supportive environment with friendly staff to ensure your fitness goals are met.",
+      features: [
+        "Premium Equipment",
+        "Supportive Trainers",
+        "Zumba Classes",
+        "Advanced Machines",
+        "Friendly Environment",
+        "Well Maintained",
+        "Clean & Hygienic",
+        "Flexible Plans"
+      ]
+    },
+    {
+      id: 6,
+      name: "Prime Fitness Gym",
+      image: "/images/prime-fitness-kondapur.png",
+      rating: "4.5",
+      reviews: "604",
+      address: "1st Floor, Botanical Garden Rd, Kondapur, Gachibowli, Hyderabad, Telangana 500084",
+      phone: "99597 61403",
+      hours: "6:00 AM - 10:00 PM",
+      description: "Prime Fitness Gym stands out for its excellent facility, equipment, and friendly trainers. It's a nicely maintained place for daily workouts with motivating trainers who provide personalized tips and tricks.",
+      features: [
+        "Motivating Trainers",
+        "Diet Planning",
+        "Excellent Facility",
+        "Friendly Atmosphere",
+        "Nice Ambience",
+        "Well Maintained",
+        "Cool Pricing",
+        "Personalized Tips"
+      ],
+      imagePosition: "object-top"
+    },
+    {
+      id: 7,
+      name: "Iron Kingdom Gym - Kondapur",
+      image: "/images/iron-kingdom.png",
+      rating: "4.9",
+      reviews: "111",
+      address: "1-57/3/A & 1-57/76/A Botanical garden road, Sriram Nagar Colony, Kondapur, Hyderabad, Telangana 500084",
+      phone: "99597 61403",
+      hours: "6:00 AM - 10:00 PM",
+      description: "Iron Kingdom Gym offers a modern equipment setup in a clean and hygienic environment. Our professional and supportive trainers ensure proper guidance for both beginners and experienced fitness enthusiasts.",
+      features: [
+        "Modern Equipment",
+        "Clean Environment",
+        "Weight Training",
+        "Professional Guidance",
+        "Positive Vibe",
+        "Supportive Trainers",
+        "Hygienic Space",
+        "Highly Recommended"
+      ],
+      imagePosition: "object-top"
     }
   ];
 
@@ -71,7 +200,11 @@ const PartnerGyms = () => {
               onClick={() => setSelectedGym(gym)}
             >
               <div className="relative h-52 overflow-hidden">
-                <img src={gym.image} alt={gym.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img 
+                  src={gym.image} 
+                  alt={gym.name} 
+                  className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${gym.imagePosition || ''}`} 
+                />
                 <div className="absolute top-4 left-4 bg-[#f1b407] text-black text-[10px] font-black px-3 py-1 rounded-xl uppercase tracking-widest shadow-md">
                   Active Partner
                 </div>
@@ -143,7 +276,11 @@ const PartnerGyms = () => {
               <div className="overflow-y-auto custom-scrollbar">
                 {/* Main Image */}
                 <div className="h-60 md:h-72 w-full">
-                  <img src={selectedGym.image} alt={selectedGym.name} className="w-full h-full object-cover" />
+                  <img 
+                    src={selectedGym.image} 
+                    alt={selectedGym.name} 
+                    className={`w-full h-full object-cover ${selectedGym.imagePosition || ''}`} 
+                  />
                 </div>
 
                 <div className="p-6 md:p-8 space-y-8">
