@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import SuccessStory from './pages/SuccessStory';
 import PinkAngels from './pages/PinkAngels';
 import TrainingPrograms from './pages/TrainingPrograms';
+import PartnerGyms from './pages/PartnerGyms';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -25,6 +26,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="training" element={<Training />} />
           <Route path="training-programs" element={<TrainingPrograms />} />
+          <Route path="partner-gyms" element={<PartnerGyms />} />
           <Route path="nutrition" element={<Nutrition />} />
           <Route path="online-training" element={<OnlineTraining />} />
           <Route path="home-training" element={<HomeTraining />} />
