@@ -31,7 +31,7 @@ const Home = () => {
       {/* Main Categories Section */}
       <section className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
 
-        {/* Partner Hospitals Card */}
+        {/* Best Doctors Card */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/60 z-0 group-hover:bg-black/40 transition duration-500"></div>
           <div className="relative z-10">
             <span className="text-pink-400 font-bold uppercase tracking-[0.2em] text-[10px] mb-2 block">Healthcare</span>
-            <h2 className="text-xl md:text-2xl font-black uppercase mb-4 text-white tracking-wider">Partner Hospitals</h2>
+            <h2 className="text-xl md:text-2xl font-black uppercase mb-4 text-white tracking-wider">Best Doctors</h2>
             <p className="text-gray-200 mb-8 font-light text-[10px] md:text-xs">Expert medical care and consultation through our network of specialized hospitals.</p>
             <span className="bg-pink-600 text-white uppercase font-bold py-2.5 px-6 rounded-full hover:bg-pink-500 transition-all shadow-lg inline-block text-xs group-hover:scale-105">View Hospitals</span>
           </div>

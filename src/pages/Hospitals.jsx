@@ -13,7 +13,7 @@ const Hospitals = () => {
       rating: "4.9",
       reviewsCount: "105",
       address: "Road NO, D.No. 14-1-90/156, 11 D, Gayatri Nagar, Allapur, Hyderabad, Telangana 500018",
-      phone: "096663 24419", // Gym booking number
+      phone: "096663 24419",
       hours: "Open 24 hours",
       description: "Navayuga Multi-Speciality Hospital is a leading healthcare institution committed to delivering high-quality, patient-centered care. With advanced infrastructure, modern diagnostic facilities, and a team of experienced doctors across specialities such as Cardiology, Orthopaedics, Neurology, Paediatrics, Gynaecology, and Critical Care.",
       specialities: [
@@ -31,13 +31,158 @@ const Hospitals = () => {
         { user: "K Venkatesh", text: "Excellent doctor and friendly nurses good and budget money" },
         { user: "Bhu lakshmi Yanamala", text: "Best hospital in this locality, highly recommend for pregnant women." }
       ]
+    },
+    {
+      id: 2,
+      name: "Dr. Krishnaveni (Yashoda Hospital)",
+      image: "/images/hospitals/dr-krishnaveni.png",
+      rating: "5.0",
+      reviewsCount: "34",
+      address: "8th Floor, Survey No. 41/14, JNTU to Hitech City Main Rd, Kothaguda, Hyderabad, 500081",
+      phone: "040 6723 2355",
+      hours: "Opens 9 am Thu",
+      description: "Dr. Krishnaveni is a leading Obstetrician & Gynecologist at Yashoda Hospital, specializing in pregnancy care, normal delivery, and infertility treatments. She is highly regarded for her patient-centered approach and pediatric care excellence.",
+      specialities: ["Pregnancy Care", "Normal Delivery", "Infertility Expert", "Pediatric Care", "Gynecology"],
+      reviews: [
+        { user: "Lavanya Tirupati", text: "Dr. Krishna Veni madam is very kind hearted person and a wonderful performer in her medical carrier." },
+        { user: "Madan Mohan", text: "We are very satisfied with the way she listened and guided us." }
+      ]
+    },
+    {
+      id: 3,
+      name: "Dr. Amulya (Keyan Clinic)",
+      image: "/images/hospitals/dr-amulya.png",
+      rating: "4.9",
+      reviewsCount: "485",
+      address: "2nd Floor, Keyan Clinic, Soham Infra, Rd No 7, Kavuri Hills, Madhapur, Hyderabad, 500081",
+      phone: "089199 06987",
+      hours: "Open 24 hours",
+      description: "Dr. Amulya Gumpalli is a Consultant ART & Fertility Specialist and Cosmetic Gynaecologist. She is known for her compassionate care in pregnancy management, fertility treatments, and gynecological wellness.",
+      specialities: ["ART & Fertility Specialist", "Cosmetic Gynecology", "Pregnancy Care", "Fertility Treatments"],
+      reviews: [
+        { user: "Ashima Panda", text: "She is not only highly knowledgeable and skilled but also very patient and compassionate." },
+        { user: "Yuva Goud", text: "Our journey with Dr Amulya has been 9 months and no words would be enough to express it." }
+      ]
+    },
+    {
+      id: 4,
+      name: "Harsha Hospital (Dr. Neetha)",
+      image: "/images/hospitals/harsha-hospital.png",
+      rating: "4.7",
+      reviewsCount: "8946",
+      address: "141, Plot Number.140, Ramalayam Rd, Vivekananda Nagar, Kukatpally, Hyderabad, 500072",
+      phone: "040 2306 6393",
+      hours: "Open 24 hours",
+      description: "Harsha Hospital, led by Dr. Neetha, is a premier center for Obstetric and Gynecological care in Kukatpally. The hospital is renowned for successful normal deliveries and providing affordable, high-quality maternity services.",
+      specialities: ["Obstetrics", "Gynecology", "Normal Delivery", "Maternity Care"],
+      reviews: [
+        { user: "Rakesh Meda", text: "Best place in budget for delivery with doctor and staff taking utmost care." },
+        { user: "Shiva Mothkula", text: "Highly Recommended for Normal Delivery – 8 Years of Trust." }
+      ]
+    },
+    {
+      id: 5,
+      name: "Genesis Clinics (Dr. Sarada Vani)",
+      image: "/images/hospitals/genesis-clinics.png",
+      popupImage: "/images/hospitals/genesis-clinics-2.png",
+      rating: "4.6",
+      reviewsCount: "372",
+      address: "no 1 & 3 plot, Srinivasa Nagar W, Ameerpet, Hyderabad, 500038",
+      phone: "091009 30819",
+      hours: "Closes 9 pm",
+      description: "Dr. N Sarada Vani at Genesis Clinics is a high-risk pregnancy specialist and robotic surgeon. She provides calm and knowledgeable support throughout the journey to motherhood.",
+      specialities: ["High-risk Pregnancy", "Robotic Surgeon", "Laparoscopic Surgeon", "Gynecology"],
+      reviews: [
+        { user: "Ankush Bhutani", text: "Dr. Sarada Vani is an excellent doctor—very calm, knowledgeable, and supportive." },
+        { user: "Gopi Nath", text: "She handled my wife's pregnancy with such loving care, making every moment sweet and stress-free." }
+      ]
+    },
+    {
+      id: 6,
+      name: "Dr. Chaitra Rachamalla",
+      image: "/images/hospitals/dr-chaitra.png",
+      rating: "5.0",
+      reviewsCount: "35",
+      address: "3rd floor, Meher Elite, Iyashi clinics, Ayyappa Society, Madhapur, Hyderabad, 500081",
+      phone: "076720 00735",
+      hours: "Closes 9 pm",
+      description: "Dr. Chaitra Rachamalla is a Gold Medalist Gynecologist and Infertility Specialist. Her clinic offers advanced hysteroscopy guided procedures and comprehensive maternity care with a compassionate touch.",
+      specialities: ["Infertility Specialist", "Maternity Care", "Hysteroscopy", "Gynecology"],
+      reviews: [
+        { user: "Svs Yashwant", text: "She was very compassionate and listened to our grievances with utmost patience." },
+        { user: "Tanu Priya Choudhary", text: "Best Gynaecologist for pregnancy and maternity care." }
+      ]
+    },
+    {
+      id: 7,
+      name: "Sharada's Urban Clinic",
+      image: "/images/hospitals/sharadas-urban.png",
+      rating: "4.4",
+      reviewsCount: "177",
+      address: "8-3-224/7/A/1, E-68, Madhura Nagar, Hyderabad, 500038",
+      phone: "072869 11911",
+      hours: "Open 24 hours",
+      description: "Sharada's Urban Clinic specializes in high-risk pregnancy monitoring and pediatric care. Dr. Deepthi Raidu provides detailed explanations and compassionate guidance for both mothers and children.",
+      specialities: ["High-risk Pregnancy", "Pediatric Care", "Maternity Centre", "Vaccination"],
+      reviews: [
+        { user: "P Nisha", text: "Very compassionate gynecologist. She explains everything in detail." },
+        { user: "Jinu V", text: "A knowledgeable and compassionate gynecologist who takes the time to listen." }
+      ]
+    },
+    {
+      id: 8,
+      name: "Dr. Dimple Mishra (Tara Clinic)",
+      image: "/images/hospitals/dr-dimple-mishra.png",
+      rating: "4.9",
+      reviewsCount: "706",
+      address: "Vijetha Super Market, Concrete Cornet, Nallagandla Trade Center, Hyderabad, 500019",
+      phone: "062900 59041",
+      hours: "Closes 9:30 pm",
+      description: "Dr. Dimple Mishra is an expert in fertility and pregnancy care. She is particularly known for her success in achieving normal deliveries even in challenging situations like high fetal heart rates.",
+      specialities: ["Fertility Doctor", "Normal Delivery", "Fibroids", "PCOS Treatment"],
+      reviews: [
+        { user: "Sudheer Kanuri", text: "I truly appreciate Dr. Dimple Mishra’s expertise and caring attitude." },
+        { user: "Jyothi Garika", text: "She gave me confidence and guided me throughout my pregnancy journey." }
+      ]
+    },
+    {
+      id: 9,
+      name: "Sravani Hospitals",
+      image: "/images/hospitals/sravani-hospitals.png",
+      rating: "4.6",
+      reviewsCount: "1935",
+      address: "91-94, Cyber Hills Rd No 5, Sarojini Naidu Nagar, Borabanda, Hyderabad, 500033",
+      phone: "091335 01555",
+      hours: "Open 24 hours",
+      description: "Sravani Hospitals is a multi-specialty center of excellence known for its modern facilities and high standards of care across various medical fields including orthopedic and pediatric services.",
+      specialities: ["Multi-specialty", "Orthopedic", "Pediatrician", "Gynecology"],
+      reviews: [
+        { user: "Sadat Hussain Mohammad", text: "Hospital maintained a high standard of care, cleanliness, and coordination." },
+        { user: "Anand Meka", text: "Received quick response by the staff and doctors." }
+      ]
+    },
+    {
+      id: 10,
+      name: "Sudha Hospital (Dr. Sudha)",
+      image: "/images/hospitals/sudha-hospital.png",
+      rating: "4.8",
+      reviewsCount: "328",
+      address: "H no:16-31, MIG :II, 197, K P H B Phase 9, Kukatpally, Hyderabad, 500085",
+      phone: "081438 00624",
+      hours: "Opens 9 am Thu",
+      description: "Sudha Hospital, led by Dr. Sudha, offers a caring and family-like environment for pregnancy checkups and delivery. Known for being patient-friendly and highly knowledgeable.",
+      specialities: ["Pregnancy Checkup", "Delivery", "Gynecology", "Family Health"],
+      reviews: [
+        { user: "Saketh Kanneganti", text: "Dr. Sudha is one of the most caring and patient-friendly doctors I have ever met." },
+        { user: "Priya B", text: "Great place near KPHB area in very reasonable price." }
+      ]
     }
   ];
 
   return (
     <div className="min-h-screen bg-white pb-20">
       <SEO
-        title="Partner Hospitals - Pink Angels"
+        title="Best Doctors - Pink Angels"
         description="Our network of trusted multi-speciality hospitals for women's health."
       />
 
@@ -45,7 +190,7 @@ const Hospitals = () => {
       <section className="relative h-[40vh] md:h-[90vh] bg-black overflow-hidden group">
         <img
           src="/images/hospitals-hero.png"
-          alt="Partner Hospitals"
+          alt="Best Doctors"
           className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10"></div>
@@ -83,7 +228,7 @@ const Hospitals = () => {
                 <div className="mt-auto flex items-center justify-between border-t border-pink-200/60 pt-4">
                   <div className="flex items-center gap-1.5">
                     <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
-                    <span className="text-pink-600 text-[10px] font-black uppercase tracking-wider">Open 24/7</span>
+                    <span className="text-pink-600 text-[10px] font-black uppercase tracking-wider">{hospital.hours}</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-gray-900 font-black text-[10px] uppercase group-hover:translate-x-1 transition-transform">
                     Details
@@ -137,8 +282,22 @@ const Hospitals = () => {
 
               <div className="overflow-y-auto custom-scrollbar">
                 {/* Main Image */}
-                <div className="h-60 md:h-72 w-full bg-pink-50/30">
-                  <img src={selectedHospital.image} alt={selectedHospital.name} className="w-full h-full object-contain p-4 md:p-8" />
+                <div className="relative bg-pink-50/30 overflow-hidden group/img">
+                  <div className={`flex transition-transform duration-500 ${selectedHospital.popupImage ? 'hover:translate-x-[-100%]' : ''}`}>
+                    <div className="h-60 md:h-72 w-full shrink-0">
+                      <img src={selectedHospital.image} alt={selectedHospital.name} className="w-full h-full object-contain p-4 md:p-8" />
+                    </div>
+                    {selectedHospital.popupImage && (
+                      <div className="h-60 md:h-72 w-full shrink-0">
+                        <img src={selectedHospital.popupImage} alt={selectedHospital.name} className="w-full h-full object-contain p-4 md:p-8" />
+                      </div>
+                    )}
+                  </div>
+                  {selectedHospital.popupImage && (
+                    <div className="absolute bottom-4 right-4 bg-black/50 text-white text-[10px] px-2 py-1 rounded backdrop-blur-sm">
+                      Swipe or Hover for More
+                    </div>
+                  )}
                 </div>
 
                 {/* Main Content */}
@@ -195,7 +354,7 @@ const Hospitals = () => {
 
                   {/* About */}
                   <div className="pt-6 border-t border-gray-100">
-                    <h4 className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-3">About Navayuga Hospital</h4>
+                    <h4 className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-3">About This Institution</h4>
                     <p className="text-gray-600 text-sm leading-relaxed italic border-l-4 border-pink-500 pl-4">
                       "{selectedHospital.description}"
                     </p>
