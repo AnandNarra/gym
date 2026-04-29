@@ -13,6 +13,7 @@ import SuccessStory from './pages/SuccessStory';
 import PinkAngels from './pages/PinkAngels';
 import TrainingPrograms from './pages/TrainingPrograms';
 import PartnerGyms from './pages/PartnerGyms';
+import Trainers from './pages/Trainers';
 import Hospitals from './pages/Hospitals';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
@@ -28,6 +29,7 @@ function App() {
           <Route path="training" element={<Training />} />
           <Route path="training-programs" element={<TrainingPrograms />} />
           <Route path="partner-gyms" element={<PartnerGyms />} />
+          <Route path="trainers" element={<Trainers />} />
           <Route path="hospitals" element={<Hospitals />} />
           <Route path="nutrition" element={<Nutrition />} />
           <Route path="online-training" element={<OnlineTraining />} />

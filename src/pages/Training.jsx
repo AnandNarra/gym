@@ -53,24 +53,23 @@ const Training = () => {
           </Link>
 
           {/* Trainers Card - Second */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl group border border-gray-200"
+          <Link
+            to="/trainers"
+            className="relative py-24 px-10 text-center rounded-2xl bg-cover bg-center overflow-hidden shadow-2xl group border-2 border-yellow-500/50 cursor-pointer hover:border-yellow-500 transition-all block"
             style={{ backgroundImage: "url('/images/workout.jpg')" }}
           >
-            <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none group-hover:bg-black/50 transition duration-500"></div>
+            <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none group-hover:bg-black/60 transition duration-500"></div>
             <div className="relative z-10">
               <span className="text-yellow-500 text-xs font-black uppercase tracking-widest mb-2 block">Male & Female</span>
               <h2 className="text-2xl md:text-3xl font-bold uppercase mb-4 text-white">Trainers</h2>
               <p className="text-gray-200 mb-8 font-light text-sm">
-                Access our network of expert collaborator trainers. View certified professionals soon.
+                Work with our network of certified professional trainers. Meet our elite athlete collaborators.
               </p>
-              <span className="bg-gray-500 text-white uppercase font-bold py-3 px-8 rounded-full cursor-not-allowed inline-block">Coming Soon</span>
+              <span className="bg-yellow-500 text-gray-900 uppercase font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-all shadow-lg inline-block hover:scale-105">
+                View Trainers
+              </span>
             </div>
-          </motion.div>
+          </Link>
 
           {/* Training Card - Last */}
           <Link
