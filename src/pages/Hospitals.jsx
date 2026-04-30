@@ -182,8 +182,8 @@ const Hospitals = () => {
   return (
     <div className="min-h-screen bg-white pb-20">
       <SEO
-        title="Best Doctors - Pink Angels"
-        description="Our network of trusted multi-speciality hospitals for women's health."
+        title="Best Doctors & Hospitals | Women's Healthcare Network"
+        description="Access our network of trusted multi-speciality hospitals and expert gynecologists for comprehensive women's health and maternity care."
       />
 
       {/* Hero Section */}

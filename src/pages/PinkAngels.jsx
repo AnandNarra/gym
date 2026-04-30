@@ -156,8 +156,8 @@ const PinkAngels = () => {
     return (
         <div className="min-h-screen bg-white text-gray-900 overflow-x-hidden">
             <SEO
-                title="Pink Angels - Fitness for Women"
-                description="Certified trainer specializing in women's health, pregnancy fitness, and PCOS/PCOD management."
+                title="Pink Angels | Women's Health & Pregnancy Fitness"
+                description="Specialized fitness programs for women. Expert guidance for PCOD/PCOS, Thyroid management, Pregnancy workouts, and Post-natal recovery."
             />
 
             {/* Hero Section */}

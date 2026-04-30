@@ -20,8 +20,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Home"
-        description="colfit.in is the ultimate fitness hub for premium gym training, personalized nutrition, and high-end gym equipment solutions."
+        title="ColFit | India's Premium Fitness & Gym Network"
+        description="India's ultimate fitness hub. Premium gym facilities, expert personal trainers, specialized women's health (Pink Angels), and high-end gym equipment solutions."
       />
 
       <Hero />

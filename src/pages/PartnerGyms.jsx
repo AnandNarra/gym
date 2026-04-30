@@ -161,8 +161,8 @@ const PartnerGyms = () => {
   return (
     <div className="min-h-screen bg-white pb-20">
       <SEO
-        title="Partner Gyms"
-        description="Our network of premium collaborator gyms."
+        title="Partner Gyms | Premium Fitness Network"
+        description="Discover our network of high-end collaborator gyms. Find the best fitness centers in Hyderabad with modern equipment and expert coaching."
       />
 
       {/* Hero Section */}

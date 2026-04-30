@@ -43,8 +43,8 @@ const Trainers = () => {
   return (
     <div className="min-h-screen bg-white pb-20">
       <SEO
-        title="Our Trainers"
-        description="Meet our certified professional trainers dedicated to your fitness transformation."
+        title="Expert Trainers | Certified Fitness Professionals"
+        description="Work with elite certified trainers. Specialized in bodybuilding, physique, weight loss, and professional athletic coaching."
       />
 
       {/* Hero Section */}

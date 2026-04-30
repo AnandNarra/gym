@@ -21,8 +21,8 @@ const Franchise = () => {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Franchise Opportunity"
-        description="Launch a profitable fitness business with colfit.in. We offer location analysis, equipment supply, and complete marketing support."
+        title="Gym Franchise Opportunity | Build Your Fitness Business"
+        description="Launch a profitable gym business with ColFit. We provide site analysis, equipment supply, marketing support, and staff management."
       />
 
 
