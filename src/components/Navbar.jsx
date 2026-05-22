@@ -7,6 +7,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+
+
   const links = [
     { name: 'Home', path: '/' },
     { name: 'Pink Angel', path: '/pink-angels' },
@@ -18,6 +20,13 @@ const Navbar = () => {
     { name: 'Success Story', path: '/success-story' },
     { name: 'Contact', path: '/contact' },
   ];
+
+  w\\
+
+  //temp code 
+  // handleUser(){
+  //   console.log("anand")
+  // }
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
