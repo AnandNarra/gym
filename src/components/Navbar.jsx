@@ -21,12 +21,13 @@ const Navbar = () => {
     { name: 'Contact', path: '/contact' },
   ];
 
-  w\\
+
 
   //temp code 
-  // handleUser(){
-  //   console.log("anand")
-  // }
+
+  handleUser(){
+    console.log("anand")
+  }
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-lg border-b border-gray-200">
